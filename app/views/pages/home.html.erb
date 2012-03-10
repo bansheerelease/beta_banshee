@@ -3,9 +3,9 @@
 <p>
   This is home page for the our social network.
 </p>
-<% if user_signed_in? %>
-       <% logo = image_tag("Banshee.jpg", :alt => "Banshee", :class => "round") %>
-       <%= link_to logo, root_path %>
+      <% if user_signed_in? %>
+      <% banshee = image_tag("Banshee.jpg", :alt => "Banshee", :class => "round") %>
+       <%= link_to banshee, root_path %>
       <% else %>
           <%= link_to "Sign up now!", new_user_registration_path, :class => "signup_button round" %>
       <% end %>

@@ -11,7 +11,6 @@
   <div id="user_nav">
     <nav class="round">
       <% if user_signed_in? %>
-
           Signed in as <%= current_user.email %>. Not you?
           <%= link_to "Sign out", destroy_user_session_path %>
       <% else %>

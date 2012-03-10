@@ -1,7 +1,13 @@
 require 'spec_helper'
+include Devise::TestHelpers
 
 describe PagesController do
   render_views
+
+  before :each do
+    @user = User.new(:email => "test@test.com", :password => "1234567", :password_confirmation => "1234567")
+    sign_in :user,@user
+  end
 
   describe "GET 'home'" do
     it "should be successful" do

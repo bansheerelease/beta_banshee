@@ -6,7 +6,6 @@ BetaBanshee::Application.routes.draw do
 
   root :to => 'pages#home'
 
-  devise_for :admins
   devise_for :users
 
   # The priority is based upon order of creation:

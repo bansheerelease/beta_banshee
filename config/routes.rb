@@ -3,6 +3,11 @@ BetaBanshee::Application.routes.draw do
   get "pages/contact"
   get "pages/help"
 
+  match '/contact', :to => 'pages#contact'
+  match '/help',    :to => 'pages#help'
+
+  root :to => 'pages#home'
+
   devise_for :admins
   devise_for :users
 

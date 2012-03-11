@@ -6,9 +6,4 @@
  * To change this template use File | Settings | File Templates.
  */
 
-$(document).ready(function(){
-    $("#first_name").click(function() {
-        alert("!!!!!!!!");
-    });
-});
 

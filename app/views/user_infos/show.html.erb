@@ -3,56 +3,56 @@
 <div id = "first_name" >
     <p>
       <b>First name:</b>
-      <%= @user_info.first_name %>
+      <%= best_in_place @user_info, :first_name %>
     </p>
 </div>
 
 <div id = "last_name">
     <p>
       <b>Last name:</b>
-      <%= @user_info.last_name %>
+      <%= best_in_place @user_info, :last_name %>
     </p>
 </div>
 
 <div id = "home_address">
     <p>
       <b>Home address:</b>
-      <%= @user_info.home_address %>
+      <%= best_in_place @user_info, :home_address %>
     </p>
 </div>
 
 <div id = "work_address">
     <p>
       <b>Work address:</b>
-      <%= @user_info.work_address %>
+      <%= best_in_place @user_info, :work_address %>
     </p>
 </div>
 
 <div id = "skype">
     <p>
       <b>Skype:</b>
-      <%= @user_info.skype %>
+      <%= best_in_place @user_info, :skype %>
     </p>
 </div>
 
 <div id = "birthday">
     <p>
       <b>Birthday:</b>
-      <%= @user_info.birthday %>
+      <%= best_in_place @user_info, :birthday %>
     </p>
 </div>
 
 <div id = "family_status">
     <p>
       <b>Family status:</b>
-      <%= @user_info.family_status %>
+      <%= best_in_place @user_info, :family_status, type: :select, collection: [["Alone", "Alone"], ["Married", "Married"], ["Looking for a pair", "Looking for a pair"]]   %>
     </p>
 </div>
 
 <div id = "home_city">
     <p>
       <b>Home city:</b>
-      <%= @user_info.home_city %>
+      <%= best_in_place @user_info, :home_city %>
     </p>
 </div>
 <p>

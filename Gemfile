@@ -4,6 +4,7 @@ gem 'rails', '3.2.2'
 gem 'heroku'
 gem 'devise'
 gem 'activeadmin'
+gem 'best_in_place'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

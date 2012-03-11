@@ -6,7 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
+$(document).ready(function(){
 $("body").click(function() {
     alert("!!!!!!!!");
+});
 });
 

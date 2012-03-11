@@ -16,10 +16,10 @@ class UserInfosController < ApplicationController
   # GET /user_infos/1.json
   def show
 
-    @user_info = UserInfo.find(current_user.user_info.id)
+    @user_info = current_user.user_info
     if @user_info.nil?
       current_user.user_info.build()
-      @user_info = UserInfo.find(current_user.user_info.id)
+      @user_info = current_user.user_info
     end
 
     respond_to do |format|

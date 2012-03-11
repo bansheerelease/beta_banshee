@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user_infos_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user_infos_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/user_infos_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
+            <state line="20" column="45" selection-start="469" selection-end="469" vertical-scroll-proportion="0.4811321">
               <folding />
             </state>
           </provider>
@@ -43,34 +43,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="479" selection-end="488" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20120311071319_create_user_infos.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20120311071319_create_user_infos.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="4" selection-start="65" selection-end="338" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20120311101433_remake_user_info.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20120311101433_remake_user_info.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="26" selection-start="705" selection-end="705" vertical-scroll-proportion="0.6146245">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20120309073623_devise_create_users.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20120309073623_devise_create_users.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="12" column="10" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,10 +107,10 @@
         <option value="$PROJECT_DIR$/app/views/user_infos/show.html.erb" />
         <option value="$PROJECT_DIR$/spec/controllers/user_infos_controller_spec.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/user_infos_controller.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120311071319_create_user_infos.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120311101433_remake_user_info.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/user_infos_controller.rb" />
       </list>
     </option>
   </component>
@@ -707,23 +680,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/user_infos_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user_info.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="18" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="479" selection-end="488" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -735,23 +694,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120309073623_devise_create_users.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120311101433_remake_user_info.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="28" column="26" selection-start="705" selection-end="705" vertical-scroll-proportion="0.6146245">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20120311071319_create_user_infos.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="65" selection-end="338" vertical-scroll-proportion="0.0">
+        <state line="2" column="4" selection-start="65" selection-end="338" vertical-scroll-proportion="0.05928854">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120311101433_remake_user_info.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120309073623_devise_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="705" selection-end="705" vertical-scroll-proportion="0.6146245">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.254717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/user_infos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="45" selection-start="469" selection-end="469" vertical-scroll-proportion="0.4811321">
           <folding />
         </state>
       </provider>

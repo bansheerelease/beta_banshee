@@ -18,7 +18,7 @@ class UserInfosController < ApplicationController
 
     @user_info = current_user.user_info
     if @user_info.nil?
-      current_user.user_info.build()
+      current_user.user_info = UserInfo.new()
       @user_info = current_user.user_info
     end
 

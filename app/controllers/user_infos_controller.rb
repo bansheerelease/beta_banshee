@@ -16,7 +16,7 @@ class UserInfosController < ApplicationController
   # GET /user_infos/1.json
   def show
 
-    @user_info = UserInfo.find_by_id(current_user.id)
+    @user_info = UserInfo.find(current_user.id)
     if @user_info.nil?
       current_user.user_info.build()
       @user_info = UserInfo.find_by_id(current_user.id)

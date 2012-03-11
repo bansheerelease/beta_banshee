@@ -2,10 +2,7 @@
   <h1>Listing users</h1>
   <table>
     <% @user.each do |user| %>
-
-        <td class="list_email">
-          <dt><% @user.email %></dt>
-        </td>
+       <br><% user.email %><br/>
     <% end %>
   </table>
 </div>

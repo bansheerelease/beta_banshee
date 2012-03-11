@@ -2,8 +2,10 @@ BetaBanshee::Application.routes.draw do
 
   ActiveAdmin.routes(self)
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
+  devise_for :admin_users
+  ActiveAdmin::Devise.config
   devise_for :users
+
   resources :user_infos
 
   match '/contact', :to => 'pages#contact'
@@ -11,8 +13,6 @@ BetaBanshee::Application.routes.draw do
   match '/', :to => 'pages#home'
   match '/profile', :to => 'user_infos#show'
   match '/user_list', :to => 'pages#userlist'
-
-  match '/admin/login', :to => 'new_admin_user_session'
   root :to => 'pages#home'
 
 

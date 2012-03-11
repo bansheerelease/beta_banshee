@@ -16,7 +16,7 @@ BetaBanshee::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -67,7 +67,7 @@ BetaBanshee::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # Settings for email.
-  config.action_mailer.default_url_options = { :host => 'http://freezing-flower-3175.heroku.com/' }
+  config.action_mailer.default_url_options = {:host => 'alpha-banshee.heroku.com/' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
@@ -75,7 +75,7 @@ BetaBanshee::Application.configure do
   config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
       port: 587,
-      domain: "http://freezing-flower-3175.heroku.com/",
+      domain: "http://alpha-banshee.heroku.com/",
       authentication: "plain",
       enable_starttls_auto: true,
       user_name: "bansheerelease@gmail.com",

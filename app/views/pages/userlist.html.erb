@@ -1,0 +1,11 @@
+<div id ="users list">
+  <h1>Listing users</h1>
+  <table>
+    <% user.each do |user| %>
+
+      <td class="list_email">
+        <dt><% user.email %></dt>
+      </td>
+    <% end %>
+  </table>
+</div>

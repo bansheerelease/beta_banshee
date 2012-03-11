@@ -14,6 +14,9 @@ class PagesController < ApplicationController
   end
 
   def profile
-    @title = "profile"
+    @title = "Profile"
+  end
+  def list
+    @title = "Title"
   end
 end

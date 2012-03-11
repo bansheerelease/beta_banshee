@@ -34,7 +34,7 @@
       <file leaf-file-name="20120311154327_devise_create_admin_users.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20120311154327_devise_create_admin_users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="19" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0">
+            <state line="46" column="19" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,7 +52,7 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="802" selection-end="907" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="949" selection-end="950" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -654,7 +654,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20120311154327_devise_create_admin_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="19" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0">
+        <state line="46" column="19" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -668,14 +668,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="802" selection-end="907" vertical-scroll-proportion="0.0">
+        <state line="21" column="0" selection-start="949" selection-end="950" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

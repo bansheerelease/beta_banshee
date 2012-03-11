@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+<<<<<<< HEAD
 //= require_tree .
+=======
+//= require_tree .
+>>>>>>> origin/master

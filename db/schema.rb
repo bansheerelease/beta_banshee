@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20120311184333) do
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
+<<<<<<< HEAD
   create_table "phones", :force => true do |t|
     t.string   "phone_number"
     t.integer  "user_info_id"
@@ -53,6 +54,8 @@ ActiveRecord::Schema.define(:version => 20120311184333) do
     t.datetime "updated_at",   :null => false
   end
 
+=======
+>>>>>>> origin/master
   create_table "user_infos", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"

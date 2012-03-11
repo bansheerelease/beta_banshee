@@ -1,60 +1,46 @@
 <p id="notice"><%= notice %></p>
 
-<div id = "first_name" >
     <p>
       <b>First name:</b>
       <%= best_in_place @user_info, :first_name %>
     </p>
-</div>
 
-<div id = "last_name">
     <p>
       <b>Last name:</b>
       <%= best_in_place @user_info, :last_name %>
     </p>
-</div>
 
-<div id = "home_address">
     <p>
       <b>Home address:</b>
       <%= best_in_place @user_info, :home_address %>
     </p>
-</div>
 
-<div id = "work_address">
     <p>
       <b>Work address:</b>
       <%= best_in_place @user_info, :work_address %>
     </p>
-</div>
 
-<div id = "skype">
     <p>
       <b>Skype:</b>
       <%= best_in_place @user_info, :skype %>
     </p>
-</div>
 
-<div id = "birthday">
     <p>
       <b>Birthday:</b>
       <%= best_in_place @user_info, :birthday %>
     </p>
-</div>
 
-<div id = "family_status">
     <p>
       <b>Family status:</b>
       <%= best_in_place @user_info, :family_status, type: :select, collection: [["Alone", "Alone"], ["Married", "Married"], ["Looking for a pair", "Looking for a pair"]]   %>
     </p>
-</div>
 
-<div id = "home_city">
     <p>
-      <b>Home city:</b>
-      <%= best_in_place @user_info, :home_city %>
+      <b>Home country:</b>
+      <%= best_in_place @user_info, :country, type: :select, collection: [["Belarus", "Belarus"], ["Russia", "Russia"], ["USA", "USA"], ["France", "France"], ["Germany", "Germany"], ["Great Britain", "Great Britain"]]%>
     </p>
-</div>
-<p>
 
-<%= link_to 'Edit', edit_user_info_path(@user_info) %>
+    <p>
+      <b>Gender:</b>
+      <%= best_in_place @user_info, :gender, type: :select, collection: [["Male", "Male"], ["Female", "Female"], ["Unknown :)", "Unknown :)"]] %>
+    </p>

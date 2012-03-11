@@ -11,7 +11,6 @@ BetaBanshee::Application.routes.draw do
   match '/help',    :to => 'pages#help'
   match '/', :to => 'pages#home'
   match '/profile', :to => 'user_infos#show'
-  match '/user_list', :to => 'pages#userlist'
   root :to => 'pages#home'
 
 

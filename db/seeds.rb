@@ -15,8 +15,6 @@ user2 = User.create(:email => "test2@test.com",
 user3 = User.create(:email => "test3@test.com",
             :password => "1234567",
             :password_confirmation => "1234567").confirm!
-<<<<<<< HEAD
 
 AdminUser.create(:email => 'admin@admin.com', :password => 'admin1', :password_confirmation => 'admin1')
-=======
->>>>>>> origin/master
+

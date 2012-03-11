@@ -16,6 +16,7 @@ class PagesController < ApplicationController
   def profile
     @title = "Profile"
   end
+
   def list
     @title = "Title"
   end

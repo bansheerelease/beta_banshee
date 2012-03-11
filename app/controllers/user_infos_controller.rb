@@ -1,16 +1,6 @@
 class UserInfosController < ApplicationController
 
   before_filter :authenticate_user!
-  # GET /user_infos
-  # GET /user_infos.json
-  def index
-    @user_infos = UserInfo.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @user_infos }
-    end
-  end
 
   # GET /user_infos/1
   # GET /user_infos/1.json
@@ -32,11 +22,7 @@ class UserInfosController < ApplicationController
   # GET /user_infos/new.json
   def new
     @user_info = UserInfo.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @user_info }
-    end
+    redirect_to '/'
   end
 
   # GET /user_infos/1/edit

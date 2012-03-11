@@ -21,14 +21,11 @@ class UserInfosController < ApplicationController
       current_user.user_info = UserInfo.new()
       @user_info = current_user.user_info
     end
-<<<<<<< HEAD
-=======
 
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @user_info }
     end
->>>>>>> origin/master
   end
 
   # GET /user_infos/new

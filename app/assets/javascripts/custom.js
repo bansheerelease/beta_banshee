@@ -7,8 +7,8 @@
  */
 
 $(document).ready(function(){
-$("body").click(function() {
-    alert("!!!!!!!!");
-});
+    $("#first_name").click(function() {
+        alert("!!!!!!!!");
+    });
 });
 

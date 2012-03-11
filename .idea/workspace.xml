@@ -25,7 +25,7 @@
       <file leaf-file-name="userlist.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/userlist.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.04643963">
+            <state line="3" column="54" selection-start="139" selection-end="139" vertical-scroll-proportion="0.06965944">
               <folding />
             </state>
           </provider>
@@ -723,7 +723,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/userlist.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.04643963">
+        <state line="3" column="54" selection-start="139" selection-end="139" vertical-scroll-proportion="0.06965944">
           <folding />
         </state>
       </provider>

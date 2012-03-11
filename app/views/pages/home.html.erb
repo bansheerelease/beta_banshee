@@ -1,0 +1,11 @@
+<body>
+<h1> Home Page </h1>
+<p>
+  This is home page for the our social network.
+</p>
+      <% if user_signed_in? %>
+          [TODO: We must put here some kind of link to users info or smth like that.]
+      <% else %>
+          <%= link_to "Sign up now!", new_user_registration_path, :class => "signup_button round" %>
+      <% end %>
+</body>

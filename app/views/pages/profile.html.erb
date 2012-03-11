@@ -1,0 +1,19 @@
+<%= @user_info %>
+
+<%= form_for (@user_info) do |user_info_form| %>
+    <% if @user_info.errors.any? %>
+        <div id="errorExplanation">
+          <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+          <ul>
+            <% @post.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= user_info_form.label :name %><br />
+      <%= user_info_form.text_field :name %>
+    </div>
+<% end %>

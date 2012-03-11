@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets' %>
+  </head>
+  <body>
+    <div class="container">
+
+      <%= render 'layouts/headpanel' %>
+      <%= render 'layouts/header' %>
+
+      <section class="round">
+        <%= yield %>
+      </section>
+      <%= render 'layouts/footer' %>
+  </div>
+  </body>
+
+  <p class="notice"> <%= notice%> </p>
+  <p class="alert"> <%= alert  %> </p>
+</html>

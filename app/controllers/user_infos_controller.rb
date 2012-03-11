@@ -15,9 +15,11 @@ class UserInfosController < ApplicationController
   # GET /user_infos/1
   # GET /user_infos/1.json
   def show
+
     @user_info = UserInfo.find_by_id(current_user.id)
     if @user_info.nil?
-      @user_info = UserInfo.new
+      current_user.user_info.build()
+      @user_info = UserInfo.find_by_id(current_user.id)
     end
 
     respond_to do |format|

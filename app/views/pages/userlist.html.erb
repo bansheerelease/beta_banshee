@@ -1,8 +1,6 @@
-<div id ="users list">
-  <h1>Listing users</h1>
-  <table>
+<body>
+<h1>Listing users</h1>
     <% @user.each do |user| %>
-       <br><% user.email %><br/>
+    <% user.email %>
     <% end %>
-  </table>
-</div>
+</body>

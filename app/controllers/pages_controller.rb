@@ -15,9 +15,5 @@ class PagesController < ApplicationController
 
   def profile
     @title = "profile"
-    @user_info = UserInfo.find_by_id(current_user.id)
-    if @user_info.nil?
-      @user_info = UserInfo.create()
-    end
   end
 end

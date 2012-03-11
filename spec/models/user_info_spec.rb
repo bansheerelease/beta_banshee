@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe UserInfo do
-
   describe "must" do
 
     before :each do
@@ -30,5 +29,4 @@ describe UserInfo do
     end
 
   end
-
 end

@@ -1,9 +1,11 @@
 BetaBanshee::Application.routes.draw do
 
+  resources :user_infos
+
   match '/contact', :to => 'pages#contact'
   match '/help',    :to => 'pages#help'
   match '/', :to => 'pages#home'
-  match '/profile', :to => 'pages#profile'
+  match '/profile', :to => 'user_infos#show'
 
   root :to => 'pages#home'
 

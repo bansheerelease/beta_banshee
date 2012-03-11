@@ -39,6 +39,7 @@ describe UserInfosController do
   describe "GET show" do
     it "assigns the requested user_info as @user_info" do
       user_info = UserInfo.create!()
+      @user.user_info = user_info
       get :show
       assigns(:user_info).should eq(user_info)
     end

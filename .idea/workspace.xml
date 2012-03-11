@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user_infos_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user_infos_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/user_infos_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="45" selection-start="469" selection-end="469" vertical-scroll-proportion="0.4811321">
+            <state line="20" column="45" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_infos_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user_infos_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/user_infos_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="41" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.0">
+            <state line="41" column="24" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.7735849">
               <folding />
             </state>
           </provider>
@@ -105,12 +105,12 @@
         <option value="$PROJECT_DIR$/app/views/user_infos/new.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/user_infos/show.html.erb" />
-        <option value="$PROJECT_DIR$/spec/controllers/user_infos_controller_spec.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120311071319_create_user_infos.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120311101433_remake_user_info.rb" />
         <option value="$PROJECT_DIR$/app/controllers/user_infos_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/user_infos_controller_spec.rb" />
       </list>
     </option>
   </component>
@@ -659,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/user_infos_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="41" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="45" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
@@ -724,7 +717,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/user_infos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="45" selection-start="469" selection-end="469" vertical-scroll-proportion="0.4811321">
+        <state line="20" column="45" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/user_infos_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="24" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.7735849">
           <folding />
         </state>
       </provider>

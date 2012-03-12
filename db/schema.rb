@@ -56,13 +56,6 @@ ActiveRecord::Schema.define(:version => 20120312151738) do
   add_index "microposts", ["created_at"], :name => "index_microposts_on_created_at"
   add_index "microposts", ["user_id"], :name => "index_microposts_on_user_id"
 
-  create_table "phones", :force => true do |t|
-    t.string   "phone_number"
-    t.integer  "user_info_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
   create_table "user_infos", :force => true do |t|
     t.string   "first_name",    :default => "+"
     t.string   "last_name",     :default => "+"

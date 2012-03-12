@@ -10,7 +10,7 @@ class RecreateUserInfo < ActiveRecord::Migration
       t.string  :birthday, :default => '+'
       t.string  :family_status, :default => '+'
       t.string  :gender, :default => 'Male'
-      t.string  :country, :default => '+'
+      t.string  :country, :default => 'Belarus'
       t.integer :user_id
 
       t.timestamps

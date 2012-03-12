@@ -62,10 +62,10 @@ ActiveRecord::Schema.define(:version => 20120311213248) do
     t.string   "birthday",      :default => "+"
     t.string   "family_status", :default => "+"
     t.string   "gender",        :default => "Male"
-    t.string   "country",       :default => "+"
+    t.string   "country",       :default => "Belarus"
     t.integer  "user_id"
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
   end
 
   add_index "user_infos", ["user_id"], :name => "index_user_infos_on_user_id"

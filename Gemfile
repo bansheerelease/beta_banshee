@@ -5,6 +5,8 @@ gem 'heroku'
 gem 'devise'
 gem 'activeadmin'
 gem 'best_in_place'
+gem 'rails-backbone'
+gem 'will_paginate'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -19,6 +21,7 @@ group :test do
   gem 'webrat'
   gem 'sqlite3'
   gem 'spork'
+  gem 'factory_girl_rails', '1.0'
 end
 
 

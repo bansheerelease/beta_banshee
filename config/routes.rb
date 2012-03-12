@@ -6,11 +6,14 @@ BetaBanshee::Application.routes.draw do
   devise_for :users
 
   resources :user_infos
+  resources :microposts
 
+  match '/wall', :to => 'microposts#show'
   match '/contact', :to => 'pages#contact'
   match '/help',    :to => 'pages#help'
   match '/', :to => 'pages#home'
   match '/profile', :to => 'user_infos#show'
+
   root :to => 'pages#home'
 
 

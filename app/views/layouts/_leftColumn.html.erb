@@ -1,6 +1,6 @@
 <td class="left_col">
   <% if user_signed_in? %>
-  <br><%= link_to "My Wall", root_path, :class => "button round" %><br/>
+  <br><%= link_to "My Wall", '/wall', :class => "button round" %><br/>
   <%= link_to "Profile", profile_path, :class => "button round" %></br>
   <%= link_to "Friends", '#', :class => "button round"%><br/>
   <%= link_to "Photo", '#', :class => "button round"%><br/>

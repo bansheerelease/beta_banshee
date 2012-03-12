@@ -4,8 +4,8 @@ describe UserInfo do
   describe "must" do
 
     before :each do
-      User.create(:email => "test@test.com", :password => "1234567", :password_confirmation => "1234567").confirm!
-      @user = User.first
+      @user = User.create(:email => "test@test.com", :password => "1234567", :password_confirmation => "1234567")
+      @user.confirm!
       @attribute = { :first_name => "Igor", :last_name => "Pertsav", :user_id => @user.id }
       @correct_user_info = UserInfo.create(@attribute)
     end

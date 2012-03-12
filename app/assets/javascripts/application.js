@@ -14,4 +14,9 @@
 //= require jquery_ujs
 //= require jquery.purr
 //= require best_in_place
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require backbone/beta_banshee
 //= require_tree

@@ -28,14 +28,6 @@ describe UserInfosController do
     sign_in :user,@user
   end
 
-  describe "GET index" do
-    it "assigns all user_infos as @user_infos" do
-      user_info = UserInfo.create!()
-      get :index
-      assigns(:user_infos).should eq([user_info])
-    end
-  end
-
   describe "GET show" do
     it "assigns the requested user_info as @user_info" do
       user_info = UserInfo.create!()
@@ -45,99 +37,5 @@ describe UserInfosController do
     end
   end
 
-  describe "GET new" do
-    it "assigns a new user_info as @user_info" do
-      get :new
-      assigns(:user_info).should be_a_new(UserInfo)
-    end
-  end
-
-  describe "GET edit" do
-    it "assigns the requested user_info as @user_info" do
-      user_info = UserInfo.create!()
-      get :edit, {:id => @user.id}
-      assigns(:user_info).should eq(user_info)
-    end
-  end
-
-  describe "POST create" do
-    describe "with valid params" do
-      it "creates a new UserInfo" do
-        expect {
-          post :create, {:user_info => ()}
-        }.to change(UserInfo, :count).by(1)
-      end
-
-      it "assigns a newly created user_info as @user_info" do
-        post :create, {:user_info => ()}
-        assigns(:user_info).should be_a(UserInfo)
-        assigns(:user_info).should be_persisted
-      end
-
-      it "redirects to the created user_info" do
-        post :create, {:user_info => ()}
-        response.should redirect_to(UserInfo.last)
-      end
-    end
-  end
-
-  describe "PUT update" do
-    describe "with valid params" do
-      it "updates the requested user_info" do
-        user_info = UserInfo.create!()
-        # Assuming there are no other user_infos in the database, this
-        # specifies that the UserInfo created on the previous line
-        # receives the :update_attributes message with whatever params are
-        # submitted in the request.
-        UserInfo.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, {:id => @user.id, :user_info => {'these' => 'params'}}
-      end
-
-      it "assigns the requested user_info as @user_info" do
-        user_info = UserInfo.create!()
-        put :update, {:id => @user.id, :user_info =>()}
-        assigns(:user_info).should eq(user_info)
-      end
-
-      it "redirects to the user_info" do
-        user_info = UserInfo.create!()
-        put :update, {:id => @user.id, :user_info =>()}
-        response.should redirect_to(user_info)
-      end
-    end
-
-    describe "with invalid params" do
-      it "assigns the user_info as @user_info" do
-        user_info = UserInfo.create!()
-        # Trigger the behavior that occurs when invalid params are submitted
-        UserInfo.any_instance.stub(:save).and_return(false)
-        put :update, {:id => @user.id, :user_info => {}}
-        assigns(:user_info).should eq(user_info)
-      end
-
-      it "re-renders the 'edit' template" do
-        user_info = UserInfo.create!()
-        # Trigger the behavior that occurs when invalid params are submitted
-        UserInfo.any_instance.stub(:save).and_return(false)
-        put :update, {:id => @user.id, :user_info => {}}
-        response.should render_template("edit")
-      end
-    end
-  end
-
-  describe "DELETE destroy" do
-    it "destroys the requested user_info" do
-      user_info = UserInfo.create!()
-      expect {
-        delete :destroy, {:id => @user.id}
-      }.to change(UserInfo, :count).by(-1)
-    end
-
-    it "redirects to the user_infos list" do
-      user_info = UserInfo.create!()
-      delete :destroy, {:id => @user.id}
-      response.should redirect_to(user_infos_url)
-    end
-  end
 
 end

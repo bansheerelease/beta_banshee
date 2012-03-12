@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title> <%= title %> </title>
     <%= csrf_meta_tag %>
     <%= render 'layouts/stylesheets' %>
   </head>
+
   <body>
-    <div class="container">
-
-      <%= render 'layouts/headpanel' %>
-      <%= render 'layouts/header' %>
-
-      <section class="round">
-        <%= yield %>
-      </section>
-      <%= render 'layouts/footer' %>
-  </div>
+    <table cellpadding="0" cellspacing="0" width="100%" align="center">
+    <tr>
+    <%= render 'layouts/frontPage' %>
+    </tr>
+    <tr>
+    <%= render 'layouts/header' %>
+    </tr>
+    <tr>
+    <%= render 'layouts/leftColumn' %>
+    <%= render 'layouts/centerColumn' %>
+    <%= render 'layouts/rightColumn' %>
+    </tr>
+    <tr>
+    <%= render 'layouts/footer' %>
+    </tr>
+    </table>
   </body>
-
-  <p class="notice"> <%= notice%> </p>
-  <p class="alert"> <%= alert  %> </p>
 </html>
+

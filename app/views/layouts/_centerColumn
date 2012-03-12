@@ -1,0 +1,2 @@
+<td class="center_col"> <%= yield %> </td>
+

@@ -26,15 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="help.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/help.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="40" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="microposts_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/controllers/microposts_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,16 +56,16 @@
       <file leaf-file-name="microposts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="22" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
+            <state line="18" column="11" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_micropost_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_micropost_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/microposts/_micropost_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="36" selection-start="69" selection-end="69" vertical-scroll-proportion="-0.625">
+            <state line="3" column="34" selection-start="152" selection-end="152" vertical-scroll-proportion="0.093361">
               <folding />
             </state>
           </provider>
@@ -83,7 +74,7 @@
       <file leaf-file-name="_micropost.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/microposts/_micropost.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="107" selection-start="441" selection-end="441" vertical-scroll-proportion="-8.125">
+            <state line="3" column="26" selection-start="120" selection-end="120" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -92,16 +83,25 @@
       <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="23" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
+            <state line="182" column="16" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="microposts_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="microposts_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/microposts_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="43" selection-start="180" selection-end="180" vertical-scroll-proportion="0.23715416">
+            <state line="8" column="43" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_error_message.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_error_message.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="35" selection-start="355" selection-end="355" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -110,7 +110,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/microposts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="166" selection-end="166" vertical-scroll-proportion="-2.5">
+            <state line="6" column="17" selection-start="213" selection-end="213" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -126,22 +126,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/models/micropost_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/user_wall.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/_leftColumn.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/contact.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/error_message.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/microposts/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/microposts/_micropost_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/microposts_controller.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/microposts_controller_spec.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/microposts/_micropost.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/microposts_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/microposts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/microposts/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_error_message.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css" />
+        <option value="$PROJECT_DIR$/app/views/microposts/_micropost_form.html.erb" />
       </list>
     </option>
   </component>
@@ -657,11 +657,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/active_admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/user_infos_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="20" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.75435203" />
@@ -694,11 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/pages_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="68" selection-end="95" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="22" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
@@ -706,23 +696,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css">
+    <entry file="file://$PROJECT_DIR$/app/helpers/microposts_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="23" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
+        <state line="8" column="43" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/microposts/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/spec/controllers/pages_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="166" selection-end="166" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="22" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" />
+        <state line="4" column="2" selection-start="68" selection-end="95" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/microposts_controller_spec.rb">
@@ -730,23 +713,44 @@
         <state line="109" column="22" selection-start="2979" selection-end="2979" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/microposts/_micropost_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="36" selection-start="69" selection-end="69" vertical-scroll-proportion="-0.625">
+        <state line="18" column="11" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="16" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/microposts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="213" selection-end="213" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_error_message.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="35" selection-start="355" selection-end="355" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/microposts/_micropost.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="107" selection-start="441" selection-end="441" vertical-scroll-proportion="-8.125">
+        <state line="3" column="26" selection-start="120" selection-end="120" vertical-scroll-proportion="-1.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/microposts_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/microposts/_micropost_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="180" selection-end="180" vertical-scroll-proportion="0.23715416">
+        <state line="3" column="34" selection-start="152" selection-end="152" vertical-scroll-proportion="0.093361">
           <folding />
         </state>
       </provider>

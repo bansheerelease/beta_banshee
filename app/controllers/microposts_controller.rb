@@ -5,7 +5,7 @@ class MicropostsController < ApplicationController
   def show
     @user = User.find(current_user.id)
     @microposts = @user.microposts.paginate(:page => params[:page], :per_page => 10)
-    @new_post = Micropost.new
+    @new_post = Micropost.new if @new_post.nil?
   end
 
   def create
@@ -14,7 +14,9 @@ class MicropostsController < ApplicationController
       flash[:success] = "Micropost created!"
       redirect_to '/wall'
     else
-      redirect_to '/wall'
+      @user = User.find(current_user.id)
+      @microposts = @user.microposts.paginate(:page => params[:page], :per_page => 10)
+      render 'microposts/show'
     end
   end
 

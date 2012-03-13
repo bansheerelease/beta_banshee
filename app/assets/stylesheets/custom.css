@@ -171,3 +171,14 @@ form.new_micropost textarea {
     height: 4em;
     margin-bottom: 0;
 }
+
+.field_with_errors {
+    width: 100%;
+}
+
+.field {
+    width: 90%;
+}
+.post_content {
+    width: 100%;
+}

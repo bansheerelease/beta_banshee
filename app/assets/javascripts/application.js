@@ -16,3 +16,6 @@
 //= require best_in_place
 //= require underscore
 //= require_tree
+
+$("#follow_form").html("<%= raw (render('relationships/unfollow').inspect) %>")
+$("#follow_form").html("<%= raw (render('relationships/follow').inspect) %>")

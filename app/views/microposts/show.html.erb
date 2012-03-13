@@ -1,5 +1,9 @@
-<%= render 'micropost_form' %>
-<% if !@user.microposts.empty? %>
+<% if @user == current_user%>
+    <%= render 'micropost_form' %>
+<% else %>
+    <%= render 'relationships/follow_form' %>
+<% end %>
+<% if !@microposts.empty? %>
     <table class="microposts" summary="User microposts">
       <%= render @microposts %>
     </table>

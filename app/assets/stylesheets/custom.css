@@ -95,7 +95,7 @@ a.signup_button {
 
 /* Button, can't change width and padding */
 button round {
-  margin-top: 5px;
+  margin-top: 15px;
   display: block;
   text-align: center;
   width: 180px;

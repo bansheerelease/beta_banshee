@@ -44,7 +44,7 @@ describe MicropostsController do
 
       it "should go to the wall page" do
         post :create, :micropost => @attr
-        response.should redirect_to('/wall')
+        response.should render_template('microposts/show')
       end
     end
 
@@ -86,7 +86,6 @@ describe MicropostsController do
       end
 
       it "should deny access" do
-        puts @micropost.inspect
         delete :destroy, :id => @micropost.id
         response.should redirect_to('/wall')
       end
@@ -103,7 +102,6 @@ describe MicropostsController do
 
       it "should destroy the micropost" do
         lambda do
-          puts @micropost.inspect
           delete :destroy, :id => @micropost.id
         end.should change(Micropost, :count).by(-1)
       end

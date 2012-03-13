@@ -1,0 +1,5 @@
+<% @users = current_user.followers %>
+<b><big><p> You have <%= pluralize(@users.count, "follower") %>.</p></big></b>
+<% if !@users.empty? %>
+  <%= render 'users/user_show' %>
+<% end %>

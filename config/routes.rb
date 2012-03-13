@@ -7,12 +7,17 @@ BetaBanshee::Application.routes.draw do
 
   resources :user_infos
   resources :microposts
+  resources :relationships
 
+  match 'destroy_relationship', :to => 'relationships#destroy'
   match '/wall', :to => 'microposts#show'
+  match '/wall/:id', :to => 'microposts#show_other_user'
   match '/contact', :to => 'pages#contact'
   match '/help',    :to => 'pages#help'
   match '/', :to => 'pages#home'
   match '/profile', :to => 'user_infos#show'
+  match 'followers', :to => 'pages#follower'
+  match 'following', :to => 'pages#following'
 
   root :to => 'pages#home'
 

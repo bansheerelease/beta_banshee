@@ -9,5 +9,48 @@ class User < ActiveRecord::Base
 
   has_one :user_info, :dependent => :destroy
   has_many :microposts, :dependent => :destroy
+
+  has_many :relationships, :foreign_key => "follower_id",
+           :dependent => :destroy
+
+  has_many :following, :through => :relationships, :source => :followed
+
+  has_many :reverse_relationships, :foreign_key => "followed_id",
+           :class_name => "Relationship",
+           :dependent => :destroy
+
+  has_many :followers, :through => :reverse_relationships, :source => :follower
+
+  def full_name
+    if self.user_info.first_name == '+' && self.user_info.last_name == '+'
+      self.email
+    else
+      if self.user_info.first_name == '+'
+        self.user_info.last_name
+      else
+        if self.user_info.last_name == '+'
+          self.user_info.first_name
+        else
+          self.user_info.first_name + ' ' + self.user_info.last_name
+        end
+      end
+    end
+  end
+
+  def following?(followed)
+    relationships.find_by_followed_id(followed)
+  end
+
+  def follow!(followed)
+    relationships.create!(:followed_id => followed.id)
+  end
+
+  def unfollow!(followed)
+    relationships.find_by_followed_id(followed).destroy
+  end
+
+  def feed
+    Micropost.from_users_followed_by(self)
+  end
   #First try
 end

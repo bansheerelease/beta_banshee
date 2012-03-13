@@ -20,4 +20,12 @@ class PagesController < ApplicationController
   def list
     @title = "Title"
   end
+
+  def follower
+    render 'pages/followers'
+  end
+
+  def following
+    render 'pages/following'
+  end
 end

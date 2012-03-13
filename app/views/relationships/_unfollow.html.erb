@@ -1,8 +1,12 @@
 <% if current_user.relationships.find_by_followed_id(@user.id).nil? %>
   <%= puts @user.id %>
+
 <% else %>
-    <%= form_for current_user.relationships.find_by_followed_id(@user.id), :remote => true,
-                 :html => { :method => :delete } do |f| %>
+  <% tag_name = "follow_form" + @user.id.to_s + 'u' %>
+  <div id= <%= tag_name %> >
+    <%= form_for current_user.relationships.find_by_followed_id(@user.id),
+                 :remote => true, :html => { :method => :delete } do |f| %>
         <div class="actions"><%= f.submit "Unfollow" %></div>
     <% end %>
+  </div>
 <% end %>

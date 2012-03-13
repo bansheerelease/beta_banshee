@@ -22,7 +22,8 @@ class User < ActiveRecord::Base
   has_many :followers, :through => :reverse_relationships, :source => :follower
 
   def full_name
-    if self.user_info.first_name == '+' && self.user_info.last_name == '+'
+
+    if (self.user_info.nil?) || (self.user_info.first_name == '+' && self.user_info.last_name == '+')
       self.email
     else
       if self.user_info.first_name == '+'

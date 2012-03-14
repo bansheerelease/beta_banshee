@@ -33,3 +33,4 @@ class MicropostsController < ApplicationController
     render 'microposts/show'
   end
 end
+

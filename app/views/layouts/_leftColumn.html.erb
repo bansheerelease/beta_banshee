@@ -1,23 +1,24 @@
 <td class="left_col">
   <% if user_signed_in? %>
-  <br><%= link_to "My Wall", '/wall', :class => "button round" %>
-  <br><%= link_to "Profile", profile_path, :class => "button round" %>
-  <br><%= link_to "Followers", '/followers', :class => "button round"%>
-  <br><%= link_to "Following", '/following', :class => "button round"%>
-  <br><%= link_to "Photo", '#', :class => "button round"%>
-  <br><%= link_to "Video", '#', :class => "button round"%>
-  <br><%= link_to "Settings", '#', :class => "button round"%>
-  <br><%= link_to "Sign out", destroy_user_session_path, :class => "button round" %>
+  <br><%= link_to "Home", root_path %>
+  <br><%= link_to "My Wall", '/wall' %>
+  <br><%= link_to "Profile", profile_path %>
+  <br><%= link_to "Followers", '/followers'%>
+  <br><%= link_to "Following", '/following'%>
+  <br><%= link_to "Photo", '#'%>
+  <br><%= link_to "Video", '#'%>
+  <br><%= link_to "Settings", '#'%>
+  <br><%= link_to "Sign out", destroy_user_session_path %>
 
   <% else %>
-  <br><%= link_to "Home", root_path, :class => "button round" %>
-  <br><%= link_to "Sign up", new_user_registration_path, :class => "button round" %>
-  <br><%= link_to "Sign in", new_user_session_path, :class => "button round" %>
+  <br><%= link_to "Home", root_path %>
+  <br><%= link_to "Sign up", new_user_registration_path %>
+  <br><%= link_to "Sign in", new_user_session_path%>
  <% end %>
   </br>
   </br>
-  <br><%= link_to "Help", help_path, :class => "button round" %>
-  <br><%= link_to "Contact", contact_path, :class => "button round" %>
+  <br><%= link_to "Help", help_path %>
+  <br><%= link_to "Contact", contact_path %>
 
 </td>
 

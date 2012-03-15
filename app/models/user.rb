@@ -12,17 +12,14 @@ class User < ActiveRecord::Base
 
   has_many :relationships, :foreign_key => "follower_id",
            :dependent => :destroy
-
   has_many :following, :through => :relationships, :source => :followed
-
   has_many :reverse_relationships, :foreign_key => "followed_id",
            :class_name => "Relationship",
            :dependent => :destroy
-
   has_many :followers, :through => :reverse_relationships, :source => :follower
 
-  def full_name
 
+  def full_name
     if (self.user_info.nil?) || (self.user_info.first_name == '+' && self.user_info.last_name == '+')
       self.email
     else
@@ -55,3 +52,4 @@ class User < ActiveRecord::Base
   end
   #First try
 end
+

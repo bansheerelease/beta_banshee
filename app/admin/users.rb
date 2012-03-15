@@ -6,7 +6,7 @@ ActiveAdmin.register User do
       end
     end
     column :email
-    column :encrypted_password
     default_actions
   end
 end
+

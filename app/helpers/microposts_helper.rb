@@ -1,3 +1,6 @@
+#Обрезка микропоста )
+
+
 module MicropostsHelper
 
   def wrap(content)
@@ -13,3 +16,4 @@ module MicropostsHelper
         text.scan(regex).join(zero_width_space)
   end
 end
+

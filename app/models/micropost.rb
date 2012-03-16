@@ -6,6 +6,10 @@ class Micropost < ActiveRecord::Base
   validates :content, :presence => true, :length => { :maximum => 300 }
   validates :user_id, :presence => true
 
+  define_index do
+    indexes content
+  end
+
   default_scope :order => 'microposts.created_at DESC'
 
   scope :from_users_followed_by, lambda { |user| followed_by(user) }

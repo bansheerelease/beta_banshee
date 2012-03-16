@@ -12,5 +12,6 @@
             <td> <%= link_to 'Show him','/wall/' + user.id.to_s, :class => "button round" %></td>
         </tr>
       <% end %>
+      <%= paginate @users %>
   <% end %>
 </table>

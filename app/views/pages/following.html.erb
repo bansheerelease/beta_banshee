@@ -1,6 +1,6 @@
 <% @users = current_user.following %>
 <b><big><p> You follows <%= pluralize(@users.count, "man") %>.</p></big></b>
 <% if !@users.empty? %>
-  <% @users = current_user.following.paginate(:page => params[:page], :per_page => 10) %>
+  <% @users = current_user.following.page(params[:current_page]) %>
   <%= render 'users/user_show' %>
 <% end %>

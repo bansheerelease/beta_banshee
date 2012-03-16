@@ -1,3 +1,4 @@
+<%= paginate @microposts %>
 <% if @user == current_user%>
     <%= render 'micropost_form' %>
 <% else %>
@@ -8,6 +9,5 @@
     <table class="microposts" summary="User microposts">
       <%= render @microposts %>
     </table>
-    <%= will_paginate @microposts %>
 <% end %>
 

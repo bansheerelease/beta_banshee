@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @title = "Home"
+    @users = Kaminari.paginate_array(User.all).page(params[:current_page])
   end
 
   def contact

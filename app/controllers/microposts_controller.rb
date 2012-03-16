@@ -4,7 +4,9 @@ class MicropostsController < ApplicationController
 
   def show
     @user = User.find(current_user.id)
-    @microposts = @user.feed.paginate(:page => params[:page], :per_page => 10)
+    feed = @user.feed
+    @microposts = feed.page(params[:current_page])#paginate(:page => params[:page], :per_page => 10)
+    #@microposts = @user.feed
     @new_post = Micropost.new if @new_post.nil?
   end
 
@@ -15,7 +17,7 @@ class MicropostsController < ApplicationController
       redirect_to '/wall'
     else
       @user = User.find(current_user.id)
-      @microposts = @user.microposts.paginate(:page => params[:page], :per_page => 10)
+      @microposts = @user.microposts.page(params[:current_page]) #(:page => params[:page], :per_page => 10)
       render 'microposts/show'
     end
   end
@@ -28,7 +30,7 @@ class MicropostsController < ApplicationController
 
   def show_other_user
     @user = User.find(params[:id])
-    @microposts = @user.feed.paginate(:page => params[:page], :per_page => 10)
+    @microposts = @user.feed.page(params[:current_page])#paginate(:page => params[:page], :per_page => 10)
     @new_post = Micropost.new if @new_post.nil?
     render 'microposts/show'
   end

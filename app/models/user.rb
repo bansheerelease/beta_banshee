@@ -18,6 +18,10 @@ class User < ActiveRecord::Base
            :dependent => :destroy
   has_many :followers, :through => :reverse_relationships, :source => :follower
 
+  define_index do
+    indexes email
+  end
+
   def full_name
     if (self.user_info.nil?) || (self.user_info.first_name == '+' && self.user_info.last_name == '+')
       self.email

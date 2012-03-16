@@ -1,0 +1,8 @@
+development:
+  port: 3030
+  searchd_binary_name: searchd
+  indexer_binary_name: indexer
+test:
+  port: 9313
+production:
+  port: 9312

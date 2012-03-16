@@ -6,21 +6,23 @@ gem 'devise'
 gem 'activeadmin'
 gem 'best_in_place'
 gem 'rails-backbone'
-gem 'will_paginate'
-gem 'acts_as_indexed'
+gem 'kaminari'
+#gem 'will_paginate','3.0.3'
+gem 'thinking-sphinx'
+gem 'meta_search'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
   gem 'rspec-rails'
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'webrat'
-  gem 'sqlite3'
+  gem 'pg'
   gem 'spork'
   gem 'factory_girl_rails', '1.0'
 end

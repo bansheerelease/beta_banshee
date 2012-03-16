@@ -7,9 +7,8 @@
         [TODO: We must put here some kind of link to users info or smth like that.]</br>
         [TODO: In future we must hide all users list from here. I done it because we don't have search :)]
 
-        <% @users_all = User.all %>
         <table>
-            <% @users_all.each do |user| %>
+            <% @users.each do |user| %>
             <tr>
               <td> <%= user.email %> </td>
               <td> <%= link_to 'Show him!','/wall/' + user.id.to_s, :class => "button round" %></td>
@@ -22,6 +21,7 @@
             </tr>
             <% end %>
         </table>
+        <%= paginate @users %>
       <% else %>
           <%= link_to "Sign up now!", new_user_registration_path, :class => "signup_button round" %>
       <% end %>

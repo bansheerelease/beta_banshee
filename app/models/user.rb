@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
     indexes email, :sortable => true
 
     #attributes
-    has user_id, created_at, update_at
+    has created_at, update_at
   end
 
   def full_name

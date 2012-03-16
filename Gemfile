@@ -7,6 +7,7 @@ gem 'activeadmin'
 gem 'best_in_place'
 gem 'rails-backbone'
 gem 'will_paginate'
+gem 'thinking-sphinx'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

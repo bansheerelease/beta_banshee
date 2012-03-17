@@ -2,7 +2,9 @@
 <% if @user == current_user%>
     <%= render 'micropost_form' %>
 <% else %>
-    <%= render 'relationships/follow_form' %>
+    <% if !@user.nil? %>
+      <%= render 'relationships/follow_form' %>
+    <% end %>
 <% end %>
 
 <% if !@microposts.empty? %>

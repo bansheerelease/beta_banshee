@@ -1,3 +1,14 @@
 <td colspan="3" class="header">
-    Сюда добавить поиск + что-нибудь еще </td>
+    Сюда добавить поиск + что-нибудь еще
+  <%= form_tag '/search' do %>
+    <%= text_field_tag :search %>
+    <%= submit_tag 'Search' %></br>
+    User search:
+    <%= check_box_tag :user %>
+    Microposts search:
+    <%= check_box_tag :microposts %>
+    User profiles search:
+    <%= check_box_tag :profiles %>
+  <% end %>
+</td>
 

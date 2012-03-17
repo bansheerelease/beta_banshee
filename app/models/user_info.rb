@@ -4,13 +4,13 @@ class UserInfo < ActiveRecord::Base
   belongs_to :user
 
   define_index do
-    indexes first_name, :as => :fname
+    indexes first_name
     indexes last_name
-    #indexes home_adress
-    #indexes skype
-    #indexes birthday
-    #indexes family_status
-    #indexes gender
-    #indexes country
+    indexes home_address
+    indexes skype
+    indexes birthday
+    indexes family_status
+    indexes gender
+    indexes country
   end
 end

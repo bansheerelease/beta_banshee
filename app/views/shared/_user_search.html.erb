@@ -1,0 +1,15 @@
+<table>
+  <% @search_res_users.each do |user| %>
+      <tr>
+        <td> <%= user.email %> </td>
+        <td> <%= link_to 'Show him!','/wall/' + user.id.to_s, :class => "button round" %></td>
+        <td>
+          <% @user = user %>
+          <% if user != current_user %>
+              <%= render 'relationships/follow_form' %>
+          <% end %>
+        </td>
+      </tr>
+  <% end %>
+</table>
+<%= paginate @search_res_users %>

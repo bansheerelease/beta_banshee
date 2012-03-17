@@ -1,0 +1,9 @@
+<% if !@search_res_users.nil? %>
+  <%= render 'shared/user_search' %>
+<% end %>
+<% if !@user_infos.nil? %>
+  <%= render 'shared/user_info_search' %>
+<% end %>
+<% if !@microposts.nil? %>
+  <%= render 'shared/microposts_search' %>
+<% end %>

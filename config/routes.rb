@@ -18,6 +18,7 @@ BetaBanshee::Application.routes.draw do
   match '/profile', :to => 'user_infos#show'
   match 'followers', :to => 'pages#follower'
   match 'following', :to => 'pages#following'
+  match 'search', :to => 'pages#search'
 
   root :to => 'pages#home'
 

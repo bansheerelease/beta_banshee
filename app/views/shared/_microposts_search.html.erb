@@ -1,0 +1,8 @@
+<%= paginate @microposts %>
+
+<% if !@microposts.empty? %>
+    <table class="microposts" summary="User microposts">
+      <%= render @microposts %>
+    </table>
+<% end %>
+

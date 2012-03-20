@@ -1,4 +1,3 @@
-<td class="left_col">
   <% if user_signed_in? %>
   <br><%= link_to "Home", root_path %>
   <br><%= link_to "My Wall", '/wall' %>
@@ -15,10 +14,4 @@
   <br><%= link_to "Sign up", new_user_registration_path %>
   <br><%= link_to "Sign in", new_user_session_path%>
  <% end %>
-  </br>
-  </br>
-  <br><%= link_to "Help", help_path %>
-  <br><%= link_to "Contact", contact_path %>
-
-</td>
 

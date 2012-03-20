@@ -3,26 +3,25 @@
   <head>
     <title> <%= title %> </title>
     <%= csrf_meta_tag %>
-    <%= render 'layouts/stylesheets' %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+
   </head>
 
   <body>
-    <table cellpadding="0" cellspacing="0" width="100%" align="center">
-    <tr>
-    <%= render 'layouts/frontPage' %>
-    </tr>
-    <tr>
-    <%= render 'layouts/header' %>
-    </tr>
-    <tr>
-    <%= render 'layouts/leftColumn' %>
-    <%= render 'layouts/centerColumn' %>
-    <%= render 'layouts/rightColumn' %>
-    </tr>
-    <tr>
-    <%= render 'layouts/footer' %>
-    </tr>
-    </table>
+    <div id= "maket" >
+      <div id = "front_page"">
+        <%= render 'layouts/frontPage' %> </div>
+      <div id= "header">
+        <%= render 'layouts/header' %> </div>
+      <div id= "left">
+        <%= render 'layouts/leftColumn' %> </div>
+      <div id= "center">
+        <%= render 'layouts/centerColumn' %> </div>
+      <div id= "footer">
+        <%= render 'layouts/footer' %> </div>
+    </div>
   </body>
+
 </html>
 

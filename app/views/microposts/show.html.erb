@@ -1,7 +1,7 @@
 <%= paginate @microposts %>
 <% if @user == current_user%>
 
-    <br><%= render 'micropost_form' %>
+    <center><br><%= render 'micropost_form' %></center>
 <% else %>
     <% if !@user.nil? %>
       <%= render 'relationships/follow_form' %>

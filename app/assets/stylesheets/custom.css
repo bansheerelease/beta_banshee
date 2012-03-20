@@ -72,7 +72,7 @@ body, html {
   min-height: 600px;
   margin: 0px 0px 0px 125px;
   padding: 10px;
-  font-size: 120%;
+  font-size: 110%;
 
 }
 
@@ -165,7 +165,7 @@ table.microposts tr td.micropost {
     vertical-align: top;
     padding-top: 10px;
     height: 50px;
-    width: 600px;
+    width: 800px;
 }
 
 table.microposts tr td.micropost span.timestamp {

@@ -1,8 +1,7 @@
 <%= paginate @microposts %>
 <% if @user == current_user%>
-    <h1> The wall of <%= @user.full_name %></h1>
-    <br>   Добавить сюда инфы
-    <%= render 'micropost_form' %>
+
+    <br><%= render 'micropost_form' %>
 <% else %>
     <% if !@user.nil? %>
       <%= render 'relationships/follow_form' %>

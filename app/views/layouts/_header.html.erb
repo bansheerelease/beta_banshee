@@ -1,6 +1,9 @@
 <%= form_tag '/search' do %>
+
 <%= text_field_tag :search %>
+
 <%= submit_tag 'Search' %></br>
+
 Select a category:
   <%= check_box_tag :user %> users;
   <%= check_box_tag :microposts %> microposts;

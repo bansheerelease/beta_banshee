@@ -1,5 +1,9 @@
 <tr>
+    <td><!-- TODO Avatar-->
+    <%= image_tag @user.gravatar_url %>
+    </td>
   <td class="micropost">
+
     <span class="title"> <b><big>Posted by <%= micropost.user.full_name%></big></b></span><br>
     <span class="content"><%= wrap(micropost.content) %></span>
     <span class="timestamp">

@@ -88,39 +88,46 @@ a.signup_button {
   -webkit-border-radius: 10px;
   border-radius:         10px;
 }
+/*microposts*/
+
 
 
 /*Неведомая хрень*/
 
 h1 {
-  font-size: 200%;
+  font-size: 150%;
   color: #000;
 }
 
 table.microposts {
-    margin-top: 1em;
+    margin-top: 10px;
+
 }
 
 table.microposts tr {
     height: 70px;
+
+
+
 }
 
 table.microposts tr td.gravatar {
     border-top: 1px solid #ccc;
-    vertical-align: top;
-    width: 50px;
+
 }
 
 table.microposts tr td.micropost {
     border-top: 1px solid #ccc;
-    vertical-align: top;
+
     padding-top: 10px;
+
 }
 
 table.microposts tr td.micropost span.timestamp {
     display: block;
     font-size: 85%;
     color: #666;
+    width: 700px;
 }
 
 div.user_info img {

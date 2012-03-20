@@ -15,5 +15,7 @@ module MicropostsHelper
     (text.length < max_width) ? text :
         text.scan(regex).join(zero_width_space)
   end
+
+
 end
 

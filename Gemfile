@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'gravtastic'
 gem 'rails', '3.2.2'
 gem 'heroku'
 gem 'devise'

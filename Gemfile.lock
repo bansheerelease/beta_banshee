@@ -72,6 +72,7 @@ GEM
     fastercsv (1.5.4)
     formtastic (2.1.1)
       actionpack (~> 3.0)
+    gravtastic (3.2.6)
     has_scope (0.5.1)
     heroku (2.21.2)
       launchy (>= 0.3.2)
@@ -199,6 +200,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   factory_girl_rails (= 1.0)
+  gravtastic
   heroku
   jquery-rails
   kaminari

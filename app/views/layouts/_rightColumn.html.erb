@@ -1,5 +1,4 @@
-<td class="right_col">
-  <% if user_signed_in? %>
+<% if user_signed_in? %>
     [Хотелось бы, чтобы пользователи могли сами выбирать аватар]
     <% avatar = image_tag("0004.gif", :alt => "Banshee", :class => "round") %>
     <%= link_to avatar, '#'%>
@@ -14,5 +13,4 @@
 
  <% end %>
   <br><a href="http://bash.im/">Have a smile</a><br/>
-</td>
 

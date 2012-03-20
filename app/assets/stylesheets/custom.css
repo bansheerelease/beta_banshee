@@ -37,12 +37,23 @@ body, html {
 #center{
   background-color:#ddd;
   min-height: 550px;
-  margin: 0px 0px 0px 125px;
+  margin: 0px 125px 0px 125px;
   padding: 10px;
   font-size: 120%;
 
 }
-
+#right{
+  background-color:#fff;
+  min-height: 550px;
+  width:100px;
+  float:right;
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+  font-size: 120%;
+}
+#clear{
+clear:both;
+}
 #footer{
   background-color:#eee;
   height: 10px;

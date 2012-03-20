@@ -3,19 +3,17 @@
   <head>
     <title> <%= title %> </title>
     <%= csrf_meta_tag %>
-    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= stylesheet_link_tag "custom", :media => "all" %>
     <%= javascript_include_tag "application" %>
 
   </head>
 
   <body>
     <div id= "maket" >
-      <div id = "front_page""> <%= render 'layouts/frontPage' %> </div>
-
+      <div id = "front_page"> <%= render 'layouts/frontPage' %> </div>
       <div id= "header"> <%= render 'layouts/header' %> </div>
 
       <div id= "left"> <%= render 'layouts/leftColumn' %> </div>
-      <div id= "right"> <%= render 'layouts/rightColumn' %> </div>
       <div id= "center"> <%= render 'layouts/centerColumn' %> </div>
 
 

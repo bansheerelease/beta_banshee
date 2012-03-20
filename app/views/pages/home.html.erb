@@ -1,16 +1,14 @@
-<% if user_signed_in? %>
-<section class="slide-up-boxes">
+<% if !user_signed_in? %>
+<%= link_to "Sign up now!", new_user_registration_path, :class => "signup_button round" %>
 
-<a href="http://bash.im/" target="_blank">
-  <h5>Have a Smile!</h5>
-  <div><center>Немного юмора для наших посетителей!</center></div>
-</a>
-
-</section>
-
-
-<%else%>
-
-  <%= link_to "Sign up now!", new_user_registration_path, :class => "signup_button round" %>
- <% end %>
+<% else %>
+  <%= gravatar_for current_user, options = {:size => 100} %> </br>
+  <%= current_user.full_name%> </br>
+  <% @users = current_user.followers %>
+  <%= pluralize( @users.count, "Reader") %></br>
+  <% @users = current_user.following %>
+  <%= pluralize( @users.count, "Friend") %></br>
+  <% @microposts = current_user.microposts%>
+  <%= pluralize( @microposts.count, "Micropost") %></br>
+<% end %>
 

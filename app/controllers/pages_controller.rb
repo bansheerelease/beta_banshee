@@ -30,34 +30,23 @@ class PagesController < ApplicationController
     render 'pages/following'
   end
 
-  def search
-    redirect_back = true
-    if (params[:user] == 1)
-      @search_res_users = User.search(params[:search], :match_mode => :any)
-      if (!@search_res_users.empty?)
-        redirect_back = false
-      end
-      #render '/shared/user_search'
+def search
+    if (!params[:user].nil?)
+      @search_res_users = User.search(params[:search], :match_mode => :any).per(5)
     end
     if (!params[:profiles].nil?)
-      @user_infos = UserInfo.search(params[:search], :match_mode => :any)
-      if (!@user_infos.empty?)
-        redirect_back = false
-      end
-      #render '/shared/user_info_search'
+      @user_infos = UserInfo.search(params[:search], :match_mode => :any).per(5)
     end
     if (!params[:microposts].nil?)
-      @microposts = Micropost.search(params[:search], :match_mode => :any)
-      if (!@microposts.empty?)
-        redirect_back = false
-      end
-      #render 'microposts/show'
+      @microposts = Micropost.search(params[:search], :match_mode => :any).per(5)
     end
-    if redirect_back
+    if ((!params[:user].nil? && @search_res_users.empty?) || (!params[:profiles].nil? && @user_infos.empty?) || (!params[:microposts].nil? && @microposts.empty?))
       render 'shared/no_result'
     else
       render 'shared/search_result'
     end
   end
 
+
 end
+

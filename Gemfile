@@ -40,7 +40,6 @@ group :assets do
 end
 
 group :production do
-  gem 'thin'
   gem 'pg'
 end
 
@@ -60,3 +59,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+

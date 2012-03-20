@@ -33,15 +33,6 @@ body, html {
   padding: 10px;
   font-size: 120%;
 }
-
-#center{
-  background-color:#ddd;
-  min-height: 550px;
-  margin: 0px 125px 0px 125px;
-  padding: 10px;
-  font-size: 120%;
-
-}
 #right{
   background-color:#fff;
   min-height: 550px;
@@ -51,6 +42,17 @@ body, html {
   padding: 10px;
   font-size: 120%;
 }
+
+
+#center{
+  background-color:#ddd;
+  min-height: 550px;
+  margin: 0px 125px 0px 125px;
+  padding: 10px;
+  font-size: 120%;
+
+}
+
 #clear{
 clear:both;
 }
@@ -90,6 +92,7 @@ a.signup_button {
   text-align: center;
   font-size: 150%;
   font-weight: bold;
+
 }
 /* Round corners */
 
@@ -110,32 +113,28 @@ h1 {
 }
 
 table.microposts {
-    margin-top: 10px;
+    margin-top: 5px;
 
 }
 
 table.microposts tr {
-    height: 70px;
+    height: 50px;
 
 }
 
-table.microposts tr td.gravatar {
-    border-top: 1px solid #ccc;
-
-}
 
 table.microposts tr td.micropost {
     border-top: 1px solid #ccc;
-
+    vertical-align: top;
     padding-top: 10px;
-
+    height: 50px;
+    width: 600px;
 }
 
 table.microposts tr td.micropost span.timestamp {
     display: block;
     font-size: 85%;
     color: #666;
-    width: 700px;
 }
 
 div.user_info img {
@@ -172,5 +171,72 @@ form.new_micropost textarea {
 }
 .post_content {
     width: 100%;
+}
+
+
+
+/*Выскальзывающие блоки*/
+
+
+.slide-up-boxes a {
+	display: block;
+	height: 130px;
+	margin: 0 0 20px 0;
+	background: rgba(215, 215, 215, 0.5);
+	border: 1px solid #ccc;
+	height: 65px;
+	overflow: hidden;
+}
+
+.slide-up-boxes h5 {
+	color: #333;
+	text-align: center;
+	height: 65px;
+	font: italic 18px/65px Georgia, Serif;
+/* Вертикальное центрирование текста за счет равных высот строки и элемента */
+	 opacity: 1;
+	 -webkit-transition: all 0.2s linear;
+	 -moz-transition: all 0.2s linear;
+	 -o-transition: all 0.2s linear;
+}
+
+.slide-up-boxes a:hover h5 {
+	margin-top: -65px;
+	opacity: 0;
+}
+
+.slide-up-boxes div {
+	position: relative;
+	color: white;
+	font: 12px/15px Georgia, Serif;
+	height: 45px;
+	padding: 10px;
+	opacity: 0;
+	-webkit-transform: rotate(6deg);
+	-webkit-transition: all 0.4s linear;
+	-moz-transform: rotate(6deg);
+	-moz-transition: all 0.4s linear;
+	-o-transform: rotate(6deg);
+	-o-transition: all 0.4s linear;
+}
+.slide-up-boxes a:hover div {
+	opacity: 1;
+	-webkit-transform: rotate(0);
+	-moz-transform: rotate(0);
+	-o-transform: rotate(0);
+}
+.slide-up-boxes a:nth-child(1) div {
+background: #c73b1b url(images/wufoo.png) 17px 17px no-repeat;
+padding-left: 120px;
+
+}
+.slide-up-boxes a:nth-child(2) div {
+background: #367db2 url(images/diw.png) 21px 10px no-repeat;
+padding-left: 90px;
+}
+.slide-up-boxes a:nth-child(3) div {
+background: #393838 url(images/qod.png) 14px 16px no-repeat;
+padding-left: 133px;
+
 }
 

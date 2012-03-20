@@ -1,6 +1,7 @@
 <% @users = current_user.following %>
-<b><big><p> You follows <%= pluralize(@users.count, "man") %>.</p></big></b>
+<b><big><p> <%= pluralize(@users.count, "Friends") %> </p></big></b>
 <% if !@users.empty? %>
   <% @users = current_user.following.page(params[:current_page]) %>
   <%= render 'users/user_show' %>
 <% end %>
+

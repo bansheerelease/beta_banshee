@@ -1,8 +1,16 @@
-<h1> Home Page </h1>
-
 <% if user_signed_in? %>
-TODO : Закинуть что-то сюда :)
+<section class="slide-up-boxes">
+
+<a href="http://bash.im/" target="_blank">
+  <h5>Have a Smile!</h5>
+  <div><center>Немного юмора для наших посетителей!</center></div>
+</a>
+
+</section>
+
+
 <%else%>
+
   <%= link_to "Sign up now!", new_user_registration_path, :class => "signup_button round" %>
  <% end %>
 

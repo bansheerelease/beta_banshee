@@ -1,16 +1,13 @@
 <% if user_signed_in? %>
-    [Хотелось бы, чтобы пользователи могли сами выбирать аватар]
-    <% avatar = image_tag("0004.gif", :alt => "Banshee", :class => "round") %>
-    <%= link_to avatar, '#'%>
-    [Если это страница пользователя добавить кнопки:
-    Читатели
-    Статистика
-    "Сделать хорошо"]
-    [Если на странице друга: то
-    Профиль друга
-    Читать/Не читать]
-  <% else %>
+  <%= gravatar_for current_user, options = {:size => 100} %>
+  <!-- Сделать только имя, а не почту, вместо имени -->
+  <%= current_user.full_name%>
+  Relationships:</br>
+  <% @users = current_user.followers %>
+  <a href='/followers'><%= pluralize( @users.count, "Reader") %></a></br>
 
- <% end %>
-  <br><a href="http://bash.im/">Have a smile</a><br/>
+  <% @users = current_user.following %>
+  <a href='/following'><%= pluralize(@users.count, "Friend") %></a>
+
+<% end %>
 

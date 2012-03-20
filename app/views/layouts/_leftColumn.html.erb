@@ -1,9 +1,6 @@
   <% if user_signed_in? %>
-  <br><%= link_to "Home", root_path %>
   <br><%= link_to "My Wall", '/wall' %>
   <br><%= link_to "Profile", profile_path%>
-  <br><%= link_to "Followers", '/followers'%>
-  <br><%= link_to "Following", '/following'%>
   <br><%= link_to "Photo", '#'%>
   <br><%= link_to "Video", '#'%>
   <br><%= link_to "Settings", edit_user_registration_path%>

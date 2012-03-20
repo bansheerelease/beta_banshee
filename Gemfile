@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'gravtastic'
+gem 'gravatar_image_tag'
 gem 'rails', '3.2.2'
 gem 'heroku'
 gem 'devise'

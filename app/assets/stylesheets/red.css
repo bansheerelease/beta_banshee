@@ -2,7 +2,7 @@
 body, html {
   margin: 0px;
   padding:0px;
-  background: #000;
+  background: #fff;
 
 }
 
@@ -15,7 +15,7 @@ body, html {
 
 /* The front page */
 #front_page  {
-  background-color:#aaa;
+  background-color:#a40004;
   height: 130px;
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
@@ -24,7 +24,7 @@ body, html {
 
 /* The header */
 #header{
-  background-color:#bbb;
+  background-color:#be2f33;
   height: 60px;
   margin: 1px 0px 1px 0px;
   padding:20px;
@@ -62,7 +62,7 @@ body, html {
 
 /* The center column */
 #center{
-  background-color:#ddd;
+  background-color:#fe3f44;
   min-height: 600px;
   margin: 0px 0px 0px 125px;
   padding: 10px;
@@ -80,7 +80,7 @@ clear:both;
 
 /* U'll be suprised: it is footer! */
 #footer{
-  background-color:#eee;
+  background-color:#a40004;
   height: 20px;
   margin: 10px 0px 0px 0px;
   font-size: 15px;
@@ -113,6 +113,12 @@ a.signup_button {
   font-size: 150%;
   font-weight: bold;
 
+}
+
+.round{
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
 }
 
 /* Old button */

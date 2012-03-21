@@ -3,11 +3,7 @@
   <head>
     <title> <%= title %> </title>
     <%= csrf_meta_tag %>
-
-    <%= stylesheet_link_tag "first", :media => "all", :title=> "first" %>
-    <%= stylesheet_link_tag "second", :media => "all", :title => "second" %>
-    <%= javascript_include_tag "application" %>
-    <body onload="set_style_from_cookie()">
+    <%= render 'layouts/stylesheets' %>
   </head>
 
   <body>

@@ -1,3 +1,10 @@
-<%= stylesheet_link_tag "application", :media => "all" %>
-<%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application" %>
+
+    <meta http-equiv="Default-Style" content="blue">
+    <%= stylesheet_link_tag "gray", :media => "all", :title=> "gray" %>
+    <%= stylesheet_link_tag "green", :media => "all", :title => "green" %>
+    <%= stylesheet_link_tag "blue", :media => "all", :title => "blue" %>
+    <%= stylesheet_link_tag "red", :media => "all", :title => "red" %>
+    <%= stylesheet_link_tag "orange", :media => "all", :title => "orange" %>
+    <body onload="set_style_from_cookie()">
 

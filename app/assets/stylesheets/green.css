@@ -1,0 +1,199 @@
+/* The whole body */
+body, html {
+  margin: 0px;
+  padding:0px;
+  background: #fff;
+
+}
+
+/* Main div container */
+#maket {
+  width: 1000px;
+  margin:0 auto;
+  text-align:left;
+}
+
+/* The front page */
+#front_page  {
+  background-color:#2b8e00;
+  height: 130px;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+/* The header */
+#header{
+  background-color:#41db00;
+  height: 60px;
+  margin: 1px 0px 1px 0px;
+  padding:20px;
+  color: #000;
+  font-size: 100%;
+  text-align:right;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+/* Left Panel */
+#left{
+  background-color:#fff;
+  min-height: 600px;
+  width:100px;
+  float:left;
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+  font-size: 120%;
+  text-align:center;
+}
+
+/* Roght Panel */
+/* We don't use it right now */
+#right{
+  background-color:#fff;
+  min-height: 600px;
+  width:100px;
+  float:right;
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+  font-size: 120%;
+}
+
+/* The center column */
+#center{
+  background-color:#70ed3b;
+  min-height: 600px;
+  margin: 0px 0px 0px 125px;
+  padding: 10px;
+  font-size: 110%;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+
+}
+
+/* div block to separate three columns from the footer */
+#clear{
+clear:both;
+}
+
+/* U'll be suprised: it is footer! */
+#footer{
+  background-color:#2b8e00;
+  height: 20px;
+  margin: 10px 0px 0px 0px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Links block*/
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+
+/* Sign up button */
+a.signup_button {
+  background: #cc3300;
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+
+}
+
+.round{
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+/* Old button */
+a.button {
+  display: block;
+  margin: 5px 0px 0px 0px;
+  text-align: left;
+
+}
+
+/*Неведомая хрень*/
+
+h1 {
+  font-size: 150%;
+  color: #000;
+}
+
+table.microposts {
+    margin-top: 5px;
+
+}
+
+table.microposts tr {
+    height: 50px;
+
+}
+
+
+table.microposts tr td.micropost {
+    border-top: 1px solid #ccc;
+    vertical-align: top;
+    padding-top: 10px;
+    height: 50px;
+    width: 800px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+    display: block;
+    font-size: 85%;
+    color: #666;
+}
+
+div.user_info img {
+    padding-right: 0.1em;
+}
+
+div.user_info a {
+    text-decoration: none;
+}
+
+div.user_info span.user_name {
+    position: absolute;
+}
+
+div.user_info span.microposts {
+    font-size: 80%;
+}
+
+form.new_micropost {
+    margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+    height: 4em;
+    margin-bottom: 0;
+}
+
+.field_with_errors {
+    width: 100%;
+}
+
+.field {
+    width: 90%;
+}
+.post_content {
+    width: 100%;
+}
+

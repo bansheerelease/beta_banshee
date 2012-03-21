@@ -1,5 +1,8 @@
   <% if user_signed_in? %>
-  <%= gravatar_for current_user, options = {:size => 100} %>
+
+
+  <%= image_tag current_user.avatar.url(:small) %>
+
   <%= link_to "My Wall", '/wall', :class => "button round" %>
   <%= link_to "Profile", profile_path , :class => "button round" %>
   <%= link_to "Followers", '/followers' , :class => "button round" %>

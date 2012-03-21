@@ -4,10 +4,14 @@
     <title> <%= title %> </title>
     <%= csrf_meta_tag %>
     <%= render 'layouts/stylesheets' %>
+    <%= javascript_include_tag "styleswitcher" %>
+    <%= javascript_include_tag "application" %>
   </head>
 
   <body>
+
     <div id= "maket" >
+
       <div id = "front_page"> <%= render 'layouts/frontPage' %> </div>
       <div id= "header"> <%= render 'layouts/header' %> </div>
       <div id= "left"> <%= render 'layouts/leftColumn' %> </div>

@@ -48,6 +48,7 @@ GEM
     bourbon (1.4.0)
       sass (>= 3.1)
     builder (3.0.0)
+    cocaine (0.2.1)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -73,7 +74,6 @@ GEM
     formtastic (2.1.1)
       actionpack (~> 3.0)
     gravatar_image_tag (1.0.0)
-    gravtastic (3.2.6)
     has_scope (0.5.1)
     heroku (2.21.2)
       launchy (>= 0.3.2)
@@ -109,6 +109,11 @@ GEM
     multi_json (1.1.0)
     nokogiri (1.5.0)
     orm_adapter (0.0.6)
+    paperclip (2.7.0)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+      cocaine (>= 0.0.2)
+      mime-types
     pg (0.13.2)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
@@ -202,11 +207,11 @@ DEPENDENCIES
   devise
   factory_girl_rails (= 1.0)
   gravatar_image_tag
-  gravtastic
   heroku
   jquery-rails
   kaminari
   meta_search
+  paperclip (~> 2.7)
   pg
   rails (= 3.2.2)
   rails-backbone

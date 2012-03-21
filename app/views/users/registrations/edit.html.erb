@@ -1,6 +1,9 @@
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+<%= form_for(resource, :as => resource_name,
+                       :url => registration_path(resource_name),
+                       :html => { :method => :put },
+                       :html => { :multipart => true }) do |f| %>
   <%= devise_error_messages! %>
 
   <div><%= f.label :email %><br />
@@ -15,19 +18,19 @@
   <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></div>
 
+<div> <p><%= f.file_field :avatar%></p> </div>
+
   <div><%= f.submit "Update" %></div>
-<% end %>
-<div>
-  <%= gravatar_for current_user, options = {:size => 80} %>
-  <%= link_to "Change", 'href="http://gravatar.com/emails'%>
-</div>
+
+
+
 
 <div>
-  <p>Try differents themes for FREE!</p>
+  <p>Try different themes for FREE!</p>
   <%= render 'layouts/themeForm' %>
 </div>
 
 <p><big>Unhappy?</big> <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
-
+<% end %>
 <center><%= link_to "Back", :back %></center>
 

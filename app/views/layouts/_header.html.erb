@@ -1,9 +1,7 @@
 
 <%= form_tag '/search' do %>
-
-<%= text_field_tag :search, "+"%>
-
-<%= submit_tag 'Search'%></br>
+<%= text_field_tag :search, params[:search]%>
+<%= submit_tag 'Search', :name => nil, :email=>nil%></br>
 
 Select a category:
   <%= check_box_tag :user %> users;

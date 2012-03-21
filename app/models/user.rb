@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   has_attached_file :avatar, :styles => { :small => "100x100>",
                                           :medium => "200x200>"},
 :default_url => "default_avatar.jpg"
-  validates_attachment_presence :avatar
+
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable

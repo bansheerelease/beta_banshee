@@ -2,7 +2,7 @@
   <% @user_infos.each do |user_info| %>
       <tr>
         <td> <%= user_info.user.email %> </td>
-        <td> <%= link_to 'Show him!','/wall/' + user_info.user.id.to_s, :class => "button round" %></td>
+        <td> <%= link_to 'Show him!','/wall/' + user_info.user.id.to_s %></td>
         <td>
           <% @user = user_info.user %>
           <% if user_info.user != current_user %>
@@ -13,3 +13,4 @@
   <% end %>
 </table>
 <%= paginate @user_infos %>
+

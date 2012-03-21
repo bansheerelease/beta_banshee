@@ -1,4 +1,4 @@
-<%= paginate @microposts %>
+
 <% if @user == current_user%>
 
     <center><br><%= render 'micropost_form' %></center>
@@ -13,4 +13,5 @@
       <%= render @microposts %>
     </table>
 <% end %>
+<center><%= paginate @microposts %></center>
 

@@ -2,7 +2,7 @@
   <% @search_res_users.each do |user| %>
       <tr>
         <td> <%= user.email %> </td>
-        <td> <%= link_to 'Show him!','/wall/' + user.id.to_s, :class => "button round" %></td>
+        <td> <%= link_to 'Show him!','/wall/' + user.id.to_s %></td>
         <td>
           <% @user = user %>
           <% if user != current_user %>
@@ -13,3 +13,4 @@
   <% end %>
 </table>
 <%= paginate @search_res_users %>
+

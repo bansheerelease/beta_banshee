@@ -1,17 +1,17 @@
   <% if user_signed_in? %>
   <%= gravatar_for current_user, options = {:size => 100} %>
   <%= link_to "My Wall", '/wall', :class => "button round" %>
-  <%= link_to "Profile", profile_path, :class => "button round"%>
-  <%= link_to "Followers", '/followers', :class => "button round" %>
-  <%= link_to "Friends", '/following', :class => "button round" %>
-  <%= link_to "Photo", '#', :class => "button round"%>
-  <%= link_to "Video", '#', :class => "button round"%>
-  <%= link_to "Settings", edit_user_registration_path, :class => "button round"%>
-  <%= link_to "Sign out", destroy_user_session_path , :class => "button round"%>
+  <%= link_to "Profile", profile_path , :class => "button round" %>
+  <%= link_to "Followers", '/followers' , :class => "button round" %>
+  <%= link_to "Friends", '/following' , :class => "button round" %>
+  <%= link_to "Photo", '#' , :class => "button round" %>
+  <%= link_to "Video", '#' , :class => "button round" %>
+  <%= link_to "Settings", edit_user_registration_path, :class => "button round"  %>
+  <%= link_to "Sign out", destroy_user_session_path , :class => "button round" %>
 
   <% else %>
-  <%= link_to "Home", root_path, :class => "button round" %>
-  <%= link_to "Sign up", new_user_registration_path, :class => "button round"%>
-  <%= link_to "Sign in", new_user_session_path, :class => "button round"%>
+  <%= link_to "Home", root_path , :class => "button round" %>
+  <%= link_to "Sign up", new_user_registration_path , :class => "button round" %>
+  <%= link_to "Sign in", new_user_session_path , :class => "button round" %>
  <% end %>
 

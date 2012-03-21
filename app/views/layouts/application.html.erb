@@ -3,23 +3,20 @@
   <head>
     <title> <%= title %> </title>
     <%= csrf_meta_tag %>
-    <%= stylesheet_link_tag "custom", :media => "all" %>
-    <%= javascript_include_tag "application" %>
 
+    <%= stylesheet_link_tag "first", :media => "all", :title=> "first" %>
+    <%= stylesheet_link_tag "second", :media => "all", :title => "second" %>
+    <%= javascript_include_tag "application" %>
+    <body onload="set_style_from_cookie()">
   </head>
 
   <body>
     <div id= "maket" >
       <div id = "front_page"> <%= render 'layouts/frontPage' %> </div>
       <div id= "header"> <%= render 'layouts/header' %> </div>
-
       <div id= "left"> <%= render 'layouts/leftColumn' %> </div>
       <div id= "center"> <%= render 'layouts/centerColumn' %> </div>
-
-
-
       <div id=clear></div>
-
       <div id= "footer"> <%= render 'layouts/footer' %> </div>
     </div>
   </body>

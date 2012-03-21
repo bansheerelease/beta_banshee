@@ -5,6 +5,7 @@ BetaBanshee::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   devise_for :users
 
+  resources :chart
   resources :user_infos
   resources :microposts
   resources :relationships
@@ -19,6 +20,7 @@ BetaBanshee::Application.routes.draw do
   match 'followers', :to => 'pages#follower'
   match 'following', :to => 'pages#following'
   match 'search', :to => 'pages#search'
+  match '/data', :to => 'chart#graph_code'
 
   root :to => 'pages#home'
 

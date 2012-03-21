@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   def home
     @title = "Home"
     @users = Kaminari.paginate_array(User.all).page(params[:current_page])
+    @chart = open_flash_chart_object(600,300,"/data")
   end
 
   def contact

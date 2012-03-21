@@ -9,6 +9,7 @@
   <% @users = current_user.following %>
   <%= pluralize( @users.count, "Friend") %></br>
   <% @microposts = current_user.microposts%>
-  <%= pluralize( @microposts.count, "Micropost") %></br>
+  <%= pluralize( @microposts.count, "Micropost") %></br></br></br>
+  <%= render 'chart/index' %>
 <% end %>
 

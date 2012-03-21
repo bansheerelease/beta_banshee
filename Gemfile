@@ -13,6 +13,7 @@ gem 'paperclip'
 gem 'rails', '3.2.2'
 gem 'rails-backbone'
 gem 'thinking-sphinx'
+gem 'ofc2'
 #gem 'will_paginate','3.0.3'
 
 # development group

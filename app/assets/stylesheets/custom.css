@@ -131,6 +131,17 @@ a.button {
 
 }
 
+.commit_button {
+    width: 100px;
+    background: #cc3300;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 90%;
+    font-weight: bold;
+    margin: 10px;
+}
+
 /* Round corners */
 
 .round {

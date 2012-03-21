@@ -1,9 +1,8 @@
 <tr>
     <td>
-  <%= image_tag micropost.user.avatar.url(:small) %>
+  <span class="avatar"><%= image_tag micropost.user.avatar.url(:small) %></span>
     </td>
   <td class="micropost">
-
     <span class="title"> Posted by <%= micropost.user.full_name%></span><br>
     <span class="content"><%= wrap(micropost.content) %></span>
     <span class="timestamp">

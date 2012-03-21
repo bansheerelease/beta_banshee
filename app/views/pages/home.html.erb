@@ -2,9 +2,7 @@
 <%= link_to "Sign up now!", new_user_registration_path, :class => "signup_button round" %>
 <% else %>
 
-  <%= image_tag current_user.avatar.url(:small) %>
-<!--
-  <%= gravatar_for current_user, options = {:size => 100} %> </br>-->
+  <%= image_tag current_user.avatar.url(:medium) %> </br>
   <%= current_user.full_name%> </br>
   <% @users = current_user.followers %>
   <%= pluralize( @users.count, "Reader") %></br>

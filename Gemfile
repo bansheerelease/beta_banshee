@@ -9,7 +9,7 @@ gem 'heroku'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'meta_search'
-gem "paperclip", "~> 2.7"
+gem 'paperclip'
 gem 'rails', '3.2.2'
 gem 'rails-backbone'
 gem 'thinking-sphinx'

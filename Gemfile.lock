@@ -211,7 +211,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   meta_search
-  paperclip (~> 2.7)
+  paperclip
   pg
   rails (= 3.2.2)
   rails-backbone

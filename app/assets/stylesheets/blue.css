@@ -197,3 +197,12 @@ form.new_micropost textarea {
     width: 100%;
 }
 
+.avatar{
+width: 100px;
+height: 100px;
+background: #eee;
+border-: 2px solid #000;
+display: block;
+text-align: center;
+}
+

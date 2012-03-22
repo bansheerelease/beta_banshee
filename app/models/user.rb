@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   attr_accessible :avatar
   has_attached_file :avatar, :styles => { :small => "100x100>",
                                           :medium => "200x200>"},
-:default_url => "default_avatar.jpg"
+                    :default_url => "default_avatar.jpg"
 
 
   # Include default devise modules. Others available are:

@@ -9,6 +9,13 @@ class MicropostsController < ApplicationController
     @new_post = Micropost.new if @new_post.nil?
   end
 
+  def show_other_user
+    @user = User.find(params[:id])
+    @microposts = @user.feed.page(params[:current_page]).per(5)
+    @new_post = Micropost.new if @new_post.nil?
+    render 'microposts/show'
+  end
+
   def create
     @new_post  = current_user.microposts.build(params[:micropost])
     if @new_post.save
@@ -27,11 +34,5 @@ class MicropostsController < ApplicationController
     redirect_to '/wall'
   end
 
-  def show_other_user
-    @user = User.find(params[:id])
-    @microposts = @user.feed.page(params[:current_page]).per(5)
-    @new_post = Micropost.new if @new_post.nil?
-    render 'microposts/show'
-  end
 end
 

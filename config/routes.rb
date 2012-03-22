@@ -10,6 +10,12 @@ BetaBanshee::Application.routes.draw do
   resources :microposts
   resources :relationships
 
+
+  resources :galleries
+  resources :paintings
+
+  match '/galleries' => "galleries#index"
+
   match 'destroy_relationship', :to => 'relationships#destroy'
   match '/wall', :to => 'microposts#show'
   match '/wall/:id', :to => 'microposts#show_other_user'
@@ -83,3 +89,4 @@ BetaBanshee::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+

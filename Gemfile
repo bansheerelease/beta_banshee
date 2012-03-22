@@ -3,15 +3,18 @@ source 'https://rubygems.org'
 # common gems
 gem 'activeadmin'
 gem 'best_in_place'
+gem "carrierwave"
 gem 'devise'
 gem 'gravatar_image_tag'
 gem 'heroku'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'meta_search'
+gem 'nifty-generators'
 gem 'paperclip'
 gem 'rails', '3.2.2'
 gem 'rails-backbone'
+gem "rmagick"
 gem 'thinking-sphinx'
 gem 'ofc2'
 #gem 'will_paginate','3.0.3'

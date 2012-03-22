@@ -74,3 +74,4 @@ class UserInfosController < ApplicationController
     end
   end
 end
+

@@ -30,10 +30,17 @@ class PagesController < ApplicationController
   def following
     render 'pages/following'
   end
+  def galleries
+    @title = "Galleries"
+  end
+  def paintings
+    @title = "Paintings"
+  end
+
 
   def search
     found = false;
-    #посмотреть, если есть пробелы, по юзаем :any, иначе :all
+    #посмотреть, если есть пробелы, то юзаем :any, иначе :all
     if (!params[:user].nil?)
       @search_res_users = User.search(params[:search], :match_mode => :any).page(params[:current_page]).per(5)
       if (!@search_res_users.empty?)

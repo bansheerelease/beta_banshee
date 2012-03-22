@@ -1,9 +1,12 @@
+
+
 <div id="paintings">
   <% for painting in @gallery.paintings %>
     <div class="painting">
       <%= image_tag painting.image_url(:thumb) if painting.image? %>
       <div class="name"><%= painting.name %></div>
       <div class="actions">
+        <%= link_to "show", painting_path%> |
         <%= link_to "edit", edit_painting_path(painting) %> |
         <%= link_to "remove", painting, :confirm => 'Are you sure?', :method => :delete %>
       </div>

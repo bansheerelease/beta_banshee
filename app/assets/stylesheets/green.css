@@ -206,3 +206,62 @@ display: block;
 text-align: center;
 }
 
+
+/*Галерея*/
+
+a img {
+  border: none;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.gallery h2 {
+  margin-bottom: 2px;
+}
+
+.painting {
+  border: solid 1px #CCC;
+  padding: 10px 10px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+background: #fff;
+}
+
+.painting .name {
+  padding-top: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.painting .image_placeholder {
+  width: 200px;
+  height: 150px;
+  background-color: #B6B6B6;
+}
+
+.painting .actions {
+  font-size: 10px;
+  text-align: center;
+  color: #777;
+}
+

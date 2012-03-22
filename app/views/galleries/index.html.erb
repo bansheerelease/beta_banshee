@@ -1,6 +1,8 @@
+
 <% for gallery in @galleries %>
   <div class="gallery">
     <h2><%= link_to gallery.name, gallery %></h2>
+
     Paintings: <%= gallery.paintings.size %>
   </div>
 <% end %>

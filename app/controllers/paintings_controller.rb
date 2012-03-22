@@ -33,5 +33,9 @@ class PaintingsController < ApplicationController
     flash[:notice] = "Successfully destroyed painting."
     redirect_to @painting.gallery
   end
+  def show
+    @painting = Painting.find(params[:id])
+  end
+
 end
 

@@ -23,6 +23,9 @@ class User < ActiveRecord::Base
                   :password_confirmation,
                   :remember_me
 
+  has_many :galleries,
+           :dependent => :destroy
+
   has_one :user_info,
           :dependent => :destroy
   has_many :microposts,

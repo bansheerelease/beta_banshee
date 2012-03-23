@@ -1,15 +1,32 @@
 <% if !user_signed_in? %>
-<%= link_to "Sign up now!", new_user_registration_path, :class => "signup_button round" %>
+  <%= link_to "Sign up now!", new_user_registration_path, :class => "signup_button round" %>
 <% else %>
+  <div id = "center_container">
+    <div id = "center_avatar">
+     <%= image_tag current_user.avatar.url(:medium) %>
+    </div>
+<b>
+    <div id = "center_info">
+       <%= current_user.full_name%>
+    </div>
 
-  <%= image_tag current_user.avatar.url(:medium) %> </br>
-  <%= current_user.full_name%> </br>
-  <% @users = current_user.followers %>
-  <%= pluralize( @users.count, "Reader") %></br>
-  <% @users = current_user.following %>
-  <%= pluralize( @users.count, "Friend") %></br>
-  <% @microposts = current_user.microposts%>
-  <%= pluralize( @microposts.count, "Micropost") %></br></br></br>
-  <%= render 'chart/index' %>
+    <div id = "center_info">
+       <% @microposts = current_user.microposts%>
+       <%= pluralize( @microposts.count, "Micropost") %>
+    </div>
+
+    <div id = "center_info">
+       <% @followers = current_user.followers%>
+       <%= pluralize( @followers.count, "Reader") %>
+    </div>
+
+    <div id = "center_info">
+       <% @following = current_user.following%>
+       <%= pluralize( @following.count, "Friend") %>
+    </div>
+</b>
+  </div>
+
+    <center><div id = "center_chart"> <%= render 'chart/index' %> </div></center>
 <% end %>
 

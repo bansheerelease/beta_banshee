@@ -1,10 +1,6 @@
-<% if user_signed_in? %>
-  <%= gravatar_for current_user, options = {:size => 100} %>
-  <%= current_user.full_name%>
-  Relationships:</br>
-  <% @users = current_user.followers %>
-  <%= pluralize( @users.count, "Reader") %></br>
-  <% @users = current_user.following %>
-  <%= pluralize( @users.count, "Friend") %>
+<% if @user== current_user %>
+  Hello, my own right column
+<% else %>
+  It's not mine!
 <% end %>
 

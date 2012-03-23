@@ -6,7 +6,8 @@
   <div id= <%= tag_name %> >
     <%= form_for current_user.relationships.find_by_followed_id(@user.id),
                  :remote => true, :html => { :method => :delete } do |f| %>
-        <%= f.submit "Unfollow", :class => "commit_button round" %>
+        <%= f.submit "Unfollow" %>
     <% end %>
   </div>
 <% end %>
+

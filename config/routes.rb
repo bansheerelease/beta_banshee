@@ -15,9 +15,11 @@ BetaBanshee::Application.routes.draw do
   resources :paintings
 
   match '/galleries/:id/paintings/:id' => "paintings#show"
-
   match '/galleries' => "galleries#index"
+  match ':id/galleries' => "galleries#show_other_user"
 
+
+  match '/user/:id' => "pages#all_about_us"
   match '/video', :to => 'pages#video'
   match 'destroy_relationship', :to => 'relationships#destroy'
   match '/wall', :to => 'microposts#show'
@@ -29,7 +31,8 @@ BetaBanshee::Application.routes.draw do
   match 'followers', :to => 'pages#follower'
   match 'following', :to => 'pages#following'
   match 'search', :to => 'pages#search'
-  match '/data', :to => 'chart#graph_code'
+  match '/data', :to => 'chart#our_data'
+  match '/other_data/:id', :to => 'chart#other_user_data'
 
   root :to => 'pages#home'
 

@@ -1,0 +1,51 @@
+
+  <div id = "center_container">
+
+    <div id = "center_avatar">
+     <%= image_tag @user.avatar.url(:medium) %> </br>
+          <center><%= render "relationships/follow_form" %></centers>
+
+    </div>
+<b>
+    <div id = "center_info">
+       <%= @user.full_name%>
+    </div>
+
+    <div id = "center_info">
+       <% @microposts =  @user.microposts%>
+       <%= pluralize( @microposts.count, "Micropost") %>
+    </div>
+
+    <div id = "center_info">
+       <% @followers =  @user.followers%>
+       <%= pluralize( @followers.count, "Reader") %>
+    </div>
+
+    <div id = "center_info">
+       <% @following =  @user.following%>
+       <%= pluralize( @following.count, "Friend") %>
+    </div>
+</b>
+    <div id = "center_info">
+      <%= link_to "Micropost", "/wall/" + @user.id.to_s %>
+    </div>
+    <div id = "center_info">
+      <%= link_to "Gallery", "/" + @user.id.to_s + "/galleries" %>
+    </div>
+  </div>
+
+
+  <div id = "center_container_2">
+
+    <div id = "center_profile">
+      <% @user_info = @user.user_info %>
+      <%= render 'user_infos/show'%>
+    </div>
+
+    <div id = "other_user_chart">
+       <%= render 'chart/index' %>
+    </div>
+
+    <div id=clear></div>
+  </div>
+

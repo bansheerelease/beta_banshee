@@ -3,6 +3,7 @@ class GalleriesController < ApplicationController
   def index
     #@galleries = Gallery.find(current_user.id)
     @galleries = current_user.galleries
+    @user = current_user
   end
 
   def show
@@ -14,7 +15,7 @@ class GalleriesController < ApplicationController
   end
 
   def create
-    @gallery = Gallery.new(params[:gallery])
+    @gallery = current_user.galleries.build(params[:gallery])
     if @gallery.save
       flash[:notice] = "Successfully created gallery."
       redirect_to @gallery
@@ -43,5 +44,12 @@ class GalleriesController < ApplicationController
     flash[:notice] = "Successfully destroyed gallery."
     redirect_to galleries_url
   end
+
+  def show_other_user
+    @galleries = User.find(params[:id]).galleries
+    @user = User.find(params[:id])
+    render 'galleries/index'
+  end
+
 end
 

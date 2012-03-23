@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
     @title = "Home"
     @users = Kaminari.paginate_array(User.all).page(params[:current_page])
-    @chart = open_flash_chart_object(600,300,"/data")
+    @chart = ofc2(600,300,"/data")
   end
 
   def contact
@@ -37,7 +37,16 @@ class PagesController < ApplicationController
     @title = "Paintings"
   end
   def video
-end
+  end
+
+
+  def all_about_us
+    @user = User.find(params[:id])
+    if @user == current_user
+      redirect_to '/'
+    end
+    @chart = ofc2(600,300,"/other_data/" + @user.id.to_s)
+  end
 
   def search
     found = false;

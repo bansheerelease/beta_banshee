@@ -48,9 +48,12 @@ ActiveRecord::Schema.define(:version => 20120322151908) do
 
   create_table "galleries", :force => true do |t|
     t.string   "name"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  add_index "galleries", ["user_id"], :name => "index_galleries_on_user_id"
 
   create_table "microposts", :force => true do |t|
     t.text     "content"
@@ -69,6 +72,8 @@ ActiveRecord::Schema.define(:version => 20120322151908) do
     t.datetime "updated_at", :null => false
     t.string   "image"
   end
+
+  add_index "paintings", ["gallery_id"], :name => "index_paintings_on_gallery_id"
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"

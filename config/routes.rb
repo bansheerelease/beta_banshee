@@ -14,8 +14,11 @@ BetaBanshee::Application.routes.draw do
   resources :galleries
   resources :paintings
 
+  match '/galleries/:id/paintings/:id' => "paintings#show"
+
   match '/galleries' => "galleries#index"
 
+  match '/video', :to => 'pages#video'
   match 'destroy_relationship', :to => 'relationships#destroy'
   match '/wall', :to => 'microposts#show'
   match '/wall/:id', :to => 'microposts#show_other_user'

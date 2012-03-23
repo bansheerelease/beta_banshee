@@ -6,7 +6,9 @@
       <%= image_tag painting.image_url(:thumb) if painting.image? %>
       <div class="name"><%= painting.name %></div>
       <div class="actions">
-        <%= link_to "show", painting_path%> |
+
+        <%= link_to "show", gallery_path + painting_path%> |
+
         <%= link_to "edit", edit_painting_path(painting) %> |
         <%= link_to "remove", painting, :confirm => 'Are you sure?', :method => :delete %>
       </div>

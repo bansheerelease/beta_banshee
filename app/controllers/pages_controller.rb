@@ -36,7 +36,8 @@ class PagesController < ApplicationController
   def paintings
     @title = "Paintings"
   end
-
+  def video
+end
 
   def search
     found = false;

@@ -1,7 +1,8 @@
 
 class GalleriesController < ApplicationController
   def index
-    @galleries = Gallery.all
+    #@galleries = Gallery.find(current_user.id)
+    @galleries = current_user.galleries
   end
 
   def show

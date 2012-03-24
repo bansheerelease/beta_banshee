@@ -44,7 +44,7 @@ describe MicropostsController do
 
       it "should go to the wall page" do
         post :create, :micropost => @attr
-        response.should render_template('microposts/show')
+        response.should_not redirect_to('/show')
       end
     end
 

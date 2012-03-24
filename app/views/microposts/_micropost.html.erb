@@ -12,6 +12,7 @@
   <% if current_user == micropost.user %>
       <td>
         <%= link_to "delete", micropost, :method => :delete,
+                    :remote => true,
                     :confirm => "Are you sure?",
                     :title => micropost.content %>
       </td>

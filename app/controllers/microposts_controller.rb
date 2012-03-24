@@ -37,7 +37,13 @@ class MicropostsController < ApplicationController
     @title = 'Microposts'
     @micropost = Micropost.find_by_id(params[:id])
     @micropost.destroy
-    redirect_to '/wall'
+    @user = User.find(current_user.id)
+    feed = @user.feed
+    @microposts = feed.page(params[:current_page]).per(5)
+    respond_to do |format|
+      format.html { redirect_to '/wall' }
+      format.js
+    end
   end
 
 end

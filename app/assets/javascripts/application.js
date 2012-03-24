@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require_tree ./global
+//= require jquery_ujs
 

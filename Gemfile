@@ -22,12 +22,12 @@ gem 'ofc2'
 # development group
 group :development do
   gem 'pg'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.9.0'
 end
 
 # test group
 group :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.9.0'
   gem 'webrat'
   gem 'pg'
   gem 'spork'

@@ -3,7 +3,6 @@ body, html {
   margin: 0px;
   padding:0px;
 
-
 }
 
 /* Main div container */
@@ -109,7 +108,7 @@ a:hover {
 
 /* Sign up button */
 a.signup_button {
-  background: #cc3300;
+  background-color: #cc3300;
   width: 190px;
   margin-left: auto;
   margin-right: auto;
@@ -206,12 +205,12 @@ form.new_micropost textarea {
 }
 
 .avatar{
-width: 100px;
-height: 100px;
-background: #eee;
-border-: 2px solid #000;
-display: block;
-text-align: center;
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  border-: 2px solid #000;
+  display: block;
+  text-align: center;
 }
 
 
@@ -252,7 +251,7 @@ a img {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
-  background: #fff;
+  background-color: #fff;
   float: left;
 }
 
@@ -285,7 +284,7 @@ a img {
 #center_avatar {
   float: left;
   height: 200px;
-  background:
+
 }
 
 #center_info {
@@ -308,8 +307,6 @@ a img {
 #center_container_2 {
   margin: 10px;
   padding: 10px;
-
-
 
 }
 

@@ -38,8 +38,11 @@
   <div id = "center_container_2">
 
     <div id = "center_profile">
+      <% if @user.user_info == nil %>
+        <% @user.user_info =  UserInfo.create(:user_id => @user.id) %>
+      <% end %>
       <% @user_info = @user.user_info %>
-      <%= render 'user_infos/show'%>
+      <%= render 'pages/show_other_user_info'%>
     </div>
 
     <div id = "other_user_chart">

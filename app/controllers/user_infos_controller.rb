@@ -5,7 +5,7 @@ class UserInfosController < ApplicationController
   # GET /user_infos/1
   # GET /user_infos/1.json
   def show
-
+    @title = 'User profile'
     @user_info = current_user.user_info
     if @user_info.nil?
       current_user.user_info = UserInfo.new()
@@ -21,18 +21,21 @@ class UserInfosController < ApplicationController
   # GET /user_infos/new
   # GET /user_infos/new.json
   def new
+    @title = 'User profile'
     @user_info = UserInfo.new
     redirect_to '/'
   end
 
   # GET /user_infos/1/edit
   def edit
+    @title = 'User profile'
     @user_info = UserInfo.find(params[:id])
   end
 
   # POST /user_infos
   # POST /user_infos.json
   def create
+    @title = 'User profile'
     @user_info = UserInfo.new(params[:user_info])
 
     respond_to do |format|
@@ -49,6 +52,7 @@ class UserInfosController < ApplicationController
   # PUT /user_infos/1
   # PUT /user_infos/1.json
   def update
+    @title = 'User profile'
     @user_info = UserInfo.find(params[:id])
 
     respond_to do |format|
@@ -65,6 +69,7 @@ class UserInfosController < ApplicationController
   # DELETE /user_infos/1
   # DELETE /user_infos/1.json
   def destroy
+    @title = 'User profile'
     @user_info = UserInfo.find(params[:id])
     @user_info.destroy
 

@@ -1,9 +1,11 @@
 class PaintingsController < ApplicationController
   def new
+    @title = 'Photos'
     @painting = Painting.new(:gallery_id => params[:gallery_id])
   end
 
   def create
+    @title = 'Photos'
     @painting = Painting.new(params[:painting])
     if @painting.save
       flash[:notice] = "Successfully created painting."
@@ -14,10 +16,12 @@ class PaintingsController < ApplicationController
   end
 
   def edit
+    @title = 'Photos'
     @painting = Painting.find(params[:id])
   end
 
   def update
+    @title = 'Photos'
     @painting = Painting.find(params[:id])
     if @painting.update_attributes(params[:painting])
       flash[:notice] = "Successfully updated painting."
@@ -28,6 +32,7 @@ class PaintingsController < ApplicationController
   end
 
   def destroy
+    @title = 'Photos'
     @painting = Painting.find(params[:id])
     @painting.destroy
     flash[:notice] = "Successfully destroyed painting."
@@ -35,6 +40,7 @@ class PaintingsController < ApplicationController
   end
 
   def show
+    @title = 'Photos'
     @painting = Painting.find(params[:id])
   end
 

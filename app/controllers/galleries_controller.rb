@@ -1,20 +1,23 @@
 
 class GalleriesController < ApplicationController
   def index
-    #@galleries = Gallery.find(current_user.id)
+    @title = 'Gallery'
     @galleries = current_user.galleries
     @user = current_user
   end
 
   def show
+    @title = 'Gallery'
     @gallery = Gallery.find(params[:id])
   end
 
   def new
+    @title = 'Gallery'
     @gallery = Gallery.new
   end
 
   def create
+    @title = 'Gallery'
     @gallery = current_user.galleries.build(params[:gallery])
     if @gallery.save
       flash[:notice] = "Successfully created gallery."
@@ -25,10 +28,12 @@ class GalleriesController < ApplicationController
   end
 
   def edit
+    @title = 'Gallery'
     @gallery = Gallery.find(params[:id])
   end
 
   def update
+    @title = 'Gallery'
     @gallery = Gallery.find(params[:id])
     if @gallery.update_attributes(params[:gallery])
       flash[:notice] = "Successfully updated gallery."
@@ -39,6 +44,7 @@ class GalleriesController < ApplicationController
   end
 
   def destroy
+    @title = 'Gallery'
     @gallery = Gallery.find(params[:id])
     @gallery.destroy
     flash[:notice] = "Successfully destroyed gallery."
@@ -46,6 +52,7 @@ class GalleriesController < ApplicationController
   end
 
   def show_other_user
+    @title = 'Gallery'
     @galleries = User.find(params[:id]).galleries
     @user = User.find(params[:id])
     render 'galleries/index'

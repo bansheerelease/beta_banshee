@@ -9,7 +9,7 @@
                 <%= render 'relationships/unfollow' %>
               <% end %>
             </td>
-            <td> <%= link_to 'Show him','/wall/' + user.id.to_s %></td>
+            <td> <%= link_to 'Show him','/user/' + user.id.to_s %></td>
         </tr>
       <% end %>
       <%= paginate @users %>

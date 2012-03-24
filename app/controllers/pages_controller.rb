@@ -24,10 +24,12 @@ class PagesController < ApplicationController
   end
 
   def follower
+    @title = 'Readers'
     render 'pages/followers'
   end
 
   def following
+    @title = 'Friends'
     render 'pages/following'
   end
   def galleries
@@ -36,11 +38,17 @@ class PagesController < ApplicationController
   def paintings
     @title = "Paintings"
   end
+
   def video
+  end
+
+  def fun
+    @title = 'Fun'
   end
 
 
   def all_about_us
+    @title = 'Profile'
     @user = User.find(params[:id])
     if @user == current_user
       redirect_to '/'

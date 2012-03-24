@@ -22,84 +22,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_user_info_search.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_user_info_search.erb">
+      <file leaf-file-name="asteroids.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/fun/asteroids.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="47" selection-start="153" selection-end="153" vertical-scroll-proportion="-2.5">
+            <state line="18" column="36" selection-start="710" selection-end="710" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/_show.html.erb">
+      <file leaf-file-name="asteroids-min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/asteroids-min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="34" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.75">
+            <state line="0" column="2077" selection-start="2077" selection-end="2077" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_user_show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/_user_show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="455" selection-end="455" vertical-scroll-proportion="-10.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_leftColumn.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_leftColumn.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="537" selection-end="537" vertical-scroll-proportion="-6.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="16" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pages_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="21" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fun_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/fun_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="23" selection-start="126" selection-end="126" vertical-scroll-proportion="0.1981132">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pacman.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/plugins/daleharvey-pacman-44c15e0/pacman.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1001" column="46" selection-start="27545" selection-end="27545" vertical-scroll-proportion="-2.548387">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fun.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="fun.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/fun.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
+            <state line="6" column="65" selection-start="495" selection-end="495" vertical-scroll-proportion="0.16245487">
               <folding />
             </state>
           </provider>
@@ -115,22 +59,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/paintings_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/user_infos_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/fun/pacman.html" />
         <option value="$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/microposts/_micropost_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/microposts/create.js.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/microposts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/active_admin.js" />
-        <option value="$PROJECT_DIR$/app/views/users/_show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/_user_show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_leftColumn.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/pacman.css" />
+        <option value="$PROJECT_DIR$/app/views/fun/pacman.html.erb" />
+        <option value="$PROJECT_DIR$/vendor/plugins/daleharvey-pacman-44c15e0/pacman.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/pacman.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/asteroids.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/asteroids.css" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/asteroids/asteroids_prerender.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/asteroids/asteroids-min.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/asteroids/asteroids_weapons.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/asteroids/asteroids_player.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/asteroids/asteroids_main.js" />
+        <option value="$PROJECT_DIR$/vendor/plugins/Asteroids/index.html" />
+        <option value="$PROJECT_DIR$/app/views/fun/asteroids.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/fun.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/fun_controller.rb" />
       </list>
     </option>
   </component>
@@ -235,14 +179,6 @@
               <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daleharvey-pacman-44c15e0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -254,7 +190,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,6 +275,50 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beta_banshee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beta_banshee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beta_banshee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beta_banshee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -404,18 +384,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets/javascripts/global" />
-      <recent name="$PROJECT_DIR$/app/assets/javascripts/Asteroids" />
-      <recent name="$PROJECT_DIR$/app/assets/images" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/public/assets" />
+      <recent name="$PROJECT_DIR$/app/assets/javascripts/asteroids" />
+      <recent name="$PROJECT_DIR$/app/views/fun" />
+      <recent name="$PROJECT_DIR$/app/assets" />
+      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets/javascripts/global" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/app/assets/javascripts/global" />
       <recent name="$PROJECT_DIR$/app/views/shared" />
     </key>
   </component>
@@ -527,14 +508,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="30" width="1368" height="715" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30395138" sideWeight="0.67066896" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30395138" sideWeight="0.67066896" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -602,122 +583,60 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/microposts/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="311" selection-end="311" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/microposts/create.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="59" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/global/swfobject.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/asteroids.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pacman.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1068" column="41" selection-start="29547" selection-end="29547" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gamelib-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/active_admin.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/soundmanager2-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_user_info_search.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="47" selection-start="153" selection-end="153" vertical-scroll-proportion="-2.5">
+        <state line="15" column="391" selection-start="2271" selection-end="2277" vertical-scroll-proportion="-5.483871">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/mathlib-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="34" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.75">
+        <state line="0" column="859" selection-start="857" selection-end="859" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_user_show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/fun/asteroids.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="455" selection-end="455" vertical-scroll-proportion="-10.0">
+        <state line="18" column="36" selection-start="710" selection-end="710" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_leftColumn.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/asteroids-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="537" selection-end="537" vertical-scroll-proportion="-6.25">
+        <state line="0" column="2077" selection-start="2077" selection-end="2077" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/fun.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="21" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/plugins/daleharvey-pacman-44c15e0/modernizr-1.5.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/plugins/daleharvey-pacman-44c15e0/pacman.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1001" column="46" selection-start="27545" selection-end="27545" vertical-scroll-proportion="-2.548387">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/fun_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="126" selection-end="126" vertical-scroll-proportion="0.1981132">
+        <state line="6" column="65" selection-start="495" selection-end="495" vertical-scroll-proportion="0.16245487">
           <folding />
         </state>
       </provider>

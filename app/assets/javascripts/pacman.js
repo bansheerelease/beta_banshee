@@ -695,7 +695,7 @@ Pacman.Audio = function(game) {
         progressEvents = [],
         playing        = [];
     
-    function load(name, path, cb) { 
+    function load(name, path, cb) {
 
         var f = files[name] = document.createElement("audio");
 
@@ -1058,12 +1058,12 @@ var PACMAN = (function () {
         var extension = Modernizr.audio.ogg ? 'ogg' : 'mp3';
 
         var audio_files = [
-            ["start", root + "audio/opening_song." + extension],
-            ["die", root + "audio/die." + extension],
-            ["eatghost", root + "audio/eatghost." + extension],
-            ["eatpill", root + "audio/eatpill." + extension],
-            ["eating", root + "audio/eating.short." + extension],
-            ["eating2", root + "audio/eating.short." + extension]
+            ["start", "assets/audio/opening_song." + extension],
+            ["die", "assets/audio/die." + extension],
+            ["eatghost", "assets/audio/eatghost." + extension],
+            ["eatpill", "assets/audio/eatpill." + extension],
+            ["eating", "assets/audio/eating.short." + extension],
+            ["eating2", "assets/audio/eating.short." + extension]
         ];
 
         load(audio_files, function() { loaded(); });

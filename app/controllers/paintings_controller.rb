@@ -1,17 +1,37 @@
 class PaintingsController < ApplicationController
+
+  # Set title for the page 'paintings/new?gallery_id=..'.
+  # Create new painting for current user gallery.
+  def create
+    @title = 'Photos'
+    @painting = Painting.new(params[:painting])
+    if @painting.save
+      redirect_to @painting.gallery
+    else
+      render :action => 'new'
+    end
+  end
+
   def new
     @title = 'Photos'
     @painting = Painting.new(:gallery_id => params[:gallery_id])
   end
 
-  def create
+  # Show the certain painting in default size.
+  def show
     @title = 'Photos'
-    @painting = Painting.new(params[:painting])
-    if @painting.save
-      flash[:notice] = "Successfully created painting."
+    @painting = Painting.find(params[:id])
+  end
+
+  # Set title for the page 'paintings/painting_id/edit'.
+  # Update certain painting selected by painting_id for current user gallery.
+  def update
+    @title = 'Photos'
+    @painting = Painting.find(params[:id])
+    if @painting.update_attributes(params[:painting])
       redirect_to @painting.gallery
     else
-      render :action => 'new'
+      render :action => 'edit'
     end
   end
 
@@ -20,28 +40,12 @@ class PaintingsController < ApplicationController
     @painting = Painting.find(params[:id])
   end
 
-  def update
-    @title = 'Photos'
-    @painting = Painting.find(params[:id])
-    if @painting.update_attributes(params[:painting])
-      flash[:notice] = "Successfully updated painting."
-      redirect_to @painting.gallery
-    else
-      render :action => 'edit'
-    end
-  end
-
+  # Update certain painting selected by painting_id for current user gallery.
   def destroy
     @title = 'Photos'
     @painting = Painting.find(params[:id])
     @painting.destroy
-    flash[:notice] = "Successfully destroyed painting."
     redirect_to @painting.gallery
-  end
-
-  def show
-    @title = 'Photos'
-    @painting = Painting.find(params[:id])
   end
 
 end

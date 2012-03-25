@@ -64,11 +64,6 @@ describe MicropostsController do
         post :create, :micropost => @attr
         response.should redirect_to('/wall')
       end
-
-      it "should have a flash message" do
-        post :create, :micropost => @attr
-        flash[:success].should =~ /micropost created/i
-      end
     end
   end
 
@@ -108,3 +103,4 @@ describe MicropostsController do
     end
   end
 end
+

@@ -1,6 +1,3 @@
-#Обрезка микропоста )
-
-
 module MicropostsHelper
 
   def wrap(content)

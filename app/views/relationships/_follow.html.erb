@@ -1,9 +1,9 @@
 <% tag_name = "follow_form" + @user.id.to_s + 'f' %>
 <div id= <%= tag_name %> >
-    <%= form_for current_user.relationships.build(:followed_id => @user.id),
-                 :remote => true  do |f| %>
-        <div><%= f.hidden_field :followed_id %></div>
-        <%= f.submit "Follow"%>
-    <% end %>
+  <%= form_for current_user.relationships.build(:followed_id => @user.id),
+                                                :remote => true  do |f| %>
+  <div><%= f.hidden_field :followed_id %></div>
+  <%= f.submit "Follow"%>
+  <% end %>
 </div>
 

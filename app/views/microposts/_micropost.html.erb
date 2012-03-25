@@ -1,7 +1,7 @@
 <tr>
-    <td>
-  <span class="avatar"><%= image_tag micropost.user.avatar.url(:small) %></span>
-    </td>
+  <td>
+    <span class="avatar"><%= image_tag micropost.user.avatar.url(:small) %></span>
+  </td>
   <td class="micropost">
     <span class="title"> Posted by <%= micropost.user.full_name%></span><br>
     <span class="content"><%= wrap(micropost.content) %></span>
@@ -10,12 +10,12 @@
     </span>
   </td>
   <% if current_user == micropost.user %>
-      <td>
-        <%= link_to "delete", micropost, :method => :delete,
-                    :remote => true,
-                    :confirm => "Are you sure?",
-                    :title => micropost.content %>
-      </td>
+    <td>
+      <%= link_to "delete", micropost, :method => :delete,
+                                       :remote => true,
+                                       :confirm => "Are you sure?",
+                                       :title => micropost.content %>
+    </td>
   <% end %>
 </tr>
 

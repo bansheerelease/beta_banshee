@@ -24,7 +24,7 @@ BetaBanshee::Application.routes.draw do
   match ':id/videos/all' => "videos#index"
   match '/download/videos', :to => 'videos#load_file'
 
-  #Wall
+  #Micropost
   match '/wall', :to => 'microposts#show'
   match '/wall/:id', :to => 'microposts#show_other_user'
 
@@ -58,8 +58,6 @@ BetaBanshee::Application.routes.draw do
   #Flex chart
   match '/data', :to => 'chart#our_data'
   match '/other_data/:id', :to => 'chart#other_user_data'
-
-
 
 end
 

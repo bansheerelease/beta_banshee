@@ -15,22 +15,21 @@
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+  <div>
+    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)
+  </i><br />
   <%= f.password_field :current_password %></div>
 
-<div> <p><%= f.file_field :avatar%> </p> </div>
-
+  <div>
+    <p> <%= f.file_field :avatar%> </p>
+  </div>
 
   <div><%= f.submit "Update" %></div>
 
-
-
-
-
-<div>
-  <p>Try different themes for FREE!</p>
-  <%= render 'layouts/themeForm' %>
-</div>
+  <div>
+    <p>Try different themes for FREE!</p>
+    <%= render 'layouts/themeForm' %>
+  </div>
 
 <% end %>
 <center><%= link_to "Back", :back %></center>

@@ -19,7 +19,6 @@ class Micropost < ActiveRecord::Base
   # Return an SQL condition for users followed by the given user.
   # We include the user's own id as well.
   def self.followed_by(user)
-    #following_ids = user.following_ids
     following_ids = %(SELECT followed_id FROM relationships
                  WHERE follower_id = :user_id)
     where("user_id IN (#{following_ids}) OR user_id = :user_id",
@@ -27,3 +26,4 @@ class Micropost < ActiveRecord::Base
   end
 
 end
+

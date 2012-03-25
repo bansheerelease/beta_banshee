@@ -1,7 +1,7 @@
-  <% if user_signed_in? %>
-
-
-  <span class="avatar"><%= image_tag current_user.avatar.url(:small) %></span>
+<% if user_signed_in? %>
+  <span class="avatar">
+    <%= image_tag current_user.avatar.url(:small) %>
+  </span>
   <%= link_to "My wall", root_path , :class => "button round" %>
   <%= link_to "Microposts", '/wall', :class => "button round" %>
   <%= link_to "Profile", profile_path , :class => "button round" %>
@@ -15,16 +15,16 @@
   <%= link_to "Sign out", destroy_user_session_path , :class => "button round" %>
 
   <br><%= form_tag '/search' do %>
-  <%= text_field_tag :search, params[:search], :size => 9 %>
-  <%= submit_tag 'Search' %></br>
-  <br><%= check_box_tag :user %> users
-  <br><%= check_box_tag :microposts %> microposts
-  <br><%= check_box_tag :profiles %> profiles
-<% end %>
+    <%= text_field_tag :search, params[:search], :size => 9 %>
+    <%= submit_tag 'Search' %></br>
+    <br><%= check_box_tag :user %> users
+    <br><%= check_box_tag :microposts %> microposts
+    <br><%= check_box_tag :profiles %> profiles
+  <% end %>
 
- <% else %>
+<% else %>
   <%= link_to "Home", root_path , :class => "button round" %>
   <%= link_to "Sign up", new_user_registration_path , :class => "button round" %>
   <%= link_to "Sign in", new_user_session_path , :class => "button round" %>
- <% end %>
+<% end %>
 

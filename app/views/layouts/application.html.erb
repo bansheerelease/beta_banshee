@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> <%= title %> </title>
-    <%= csrf_meta_tag %>
-    <%= render 'layouts/stylesheets' %>
-  </head>
 
-  <body>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <%= csrf_meta_tag %>
+            <%= render 'layouts/stylesheets' %>
+    </head>
 
-    <div id= "maket" >
-
-      <div id= "header"> <%= render 'layouts/header' %> </div>
-      <div id= "left"> <%= render 'layouts/leftColumn' %> </div>
-      <div id= "center"> <%= render 'layouts/centerColumn' %> </div>
-      <div id=clear></div>
-      <div id= "footer"> <%= render 'layouts/footer' %> </div>
-    </div>
-  </body>
+    <body>
+        <div id="maket">
+            <div id="header">
+                <%= render 'layouts/header' %>
+            </div>
+            <div id="left">
+                <%= render 'layouts/leftColumn' %>
+            </div>
+            <div id="center">
+                <%= render 'layouts/centerColumn' %>
+            </div>
+            <div id=clear></div>
+            <div id="footer">
+                <%= render 'layouts/footer' %>
+            </div>
+        </div>
+    </body>
 
 </html>
 

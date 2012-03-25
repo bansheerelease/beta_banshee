@@ -1,4 +1,5 @@
 module ApplicationHelper
+
   def title
     base_title = "Banshee"
     if @title.nil?

@@ -1,12 +1,15 @@
 class PagesController < ApplicationController
   before_filter :authenticate_user!, :except => [:home, :contact, :help]
 
+
+  # Set title for "/" home page.
+  # Let to build chart for current_user.
   def home
     @title = "Home"
-    @users = Kaminari.paginate_array(User.all).page(params[:current_page])
     @chart = ofc2(600,300,"/data")
   end
 
+  # Set title for certain pages.
   def contact
     @title = "Contacts"
   end
@@ -46,7 +49,9 @@ class PagesController < ApplicationController
     @title = 'Fun'
   end
 
-
+  # Set title for the page 'user/user_id'
+  # Get all the information for certain user.
+  # Let to build chart for certain user.
   def all_about_us
     @title = 'Profile'
     @user = User.find(params[:id])
@@ -56,9 +61,9 @@ class PagesController < ApplicationController
     @chart = ofc2(600,300,"/other_data/" + @user.id.to_s)
   end
 
+  # Realization of the Sphinx full-text search algorithm.
   def search
     found = false;
-    #посмотреть, если есть пробелы, то юзаем :any, иначе :all
     if (!params[:user].nil?)
       if (params[:search].empty?)
         @search_res_users = Kaminari.paginate_array(User.all).page(params[:current_page]).per(10)

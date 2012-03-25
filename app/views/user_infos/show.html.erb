@@ -1,46 +1,47 @@
 <p id="notice"><%= notice %></p>
 
-    <p>
-      <b>First name:</b>
-      <%= best_in_place @user_info, :first_name %>
-    </p>
+<p>
+  <b>First name:</b>
+  <%= best_in_place @user_info, :first_name %>
+</p>
 
-    <p>
-      <b>Last name:</b>
-      <%= best_in_place @user_info, :last_name %>
-    </p>
+<p>
+  <b>Last name:</b>
+  <%= best_in_place @user_info, :last_name %>
+</p>
 
-    <p>
-      <b>Home address:</b>
-      <%= best_in_place @user_info, :home_address %>
-    </p>
+<p>
+  <b>Home address:</b>
+  <%= best_in_place @user_info, :home_address %>
+</p>
 
-    <p>
-      <b>Work address:</b>
-      <%= best_in_place @user_info, :work_address %>
-    </p>
+<p>
+  <b>Work address:</b>
+  <%= best_in_place @user_info, :work_address %>
+</p>
 
-    <p>
-      <b>Skype:</b>
-      <%= best_in_place @user_info, :skype %>
-    </p>
+<p>
+  <b>Skype:</b>
+  <%= best_in_place @user_info, :skype %>
+</p>
 
-    <p>
-      <b>Birthday:</b>
-      <%= best_in_place @user_info, :birthday %>
-    </p>
+<p>
+  <b>Birthday:</b>
+  <%= best_in_place @user_info, :birthday %>
+</p>
 
-    <p>
-      <b>Family status:</b>
-      <%= best_in_place @user_info, :family_status, type: :select, collection: [["Alone", "Alone"], ["Married", "Married"], ["Looking for a pair", "Looking for a pair"]]   %>
-    </p>
+<p>
+  <b>Family status:</b>
+  <%= best_in_place @user_info, :family_status, type: :select, collection: [["Forever alone", "Forever alone"], ["Married", "Married"], ["Looking for a pair", "Looking for a pair"]]   %>
+</p>
 
-    <p>
-      <b>Home country:</b>
-      <%= best_in_place @user_info, :country, type: :select, collection: [["Belarus", "Belarus"], ["Russia", "Russia"], ["USA", "USA"], ["France", "France"], ["Germany", "Germany"]]%>
-    </p>
+<p>
+  <b>Home country:</b>
+  <%= best_in_place @user_info, :country, type: :select, collection: [["Belarus", "Belarus"], ["Russia", "Russia"], ["USA", "USA"], ["France", "France"], ["Germany", "Germany"]]%>
+</p>
 
-    <p>
-      <b>Gender:</b>
-      <%= best_in_place @user_info, :gender, type: :select, collection: [["Male", "Male"], ["Female", "Female"]] %>
-    </p>
+<p>
+  <b>Gender:</b>
+  <%= best_in_place @user_info, :gender, type: :select, collection: [["Male", "Male"], ["Female", "Female"], ["Not sure", "Not sure"]] %>
+</p>
+

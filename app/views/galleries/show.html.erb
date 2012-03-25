@@ -1,4 +1,10 @@
 
+<p>
+  <%= link_to "Add a Painting", new_painting_path(:gallery_id => @gallery) %> |
+  <%= link_to "Remove Gallery", @gallery, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View Galleries", galleries_path %>
+</p>
+
 
 <div id="paintings">
   <% for painting in @gallery.paintings %>
@@ -15,10 +21,4 @@
   <% end %>
   <div class="clear"></div>
 </div>
-
-<p>
-  <%= link_to "Add a Painting", new_painting_path(:gallery_id => @gallery) %> |
-  <%= link_to "Remove Gallery", @gallery, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View Galleries", galleries_path %>
-</p>
 

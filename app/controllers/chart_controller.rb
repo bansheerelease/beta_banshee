@@ -1,5 +1,6 @@
 class ChartController < ApplicationController
 
+  # Collecting data and creating current_user chart.
   def our_data
     title = OFC2::Title.new( :text => "Readers/friends statistic" , :style => "{font-size: 14px; color: #b50F0F; text-align: center;}")
     bar = OFC2::Bar3d.new(:text => '', :colour => '#41046f')
@@ -26,7 +27,7 @@ class ChartController < ApplicationController
   end
 
 
-
+  # Collecting data and creating chart for all users exept current_user.
   def other_user_data
     user = User.find(params[:id])
     title = OFC2::Title.new( :text => "Readers/friends statistic" , :style => "{font-size: 14px; color: #b50F0F; text-align: center;}")

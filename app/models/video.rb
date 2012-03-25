@@ -5,14 +5,12 @@ class Video < ActiveRecord::Base
   has_attached_file :source
 
   validates_attachment_presence :source
-
-
-  aasm :column => :state do  # defaults to aasm_state
+  aasm :column => :state do
+    # defaults to aasm_state
     state :pending, :initial => true
     state :converting
     state :converted, :enter => :set_new_filename
     state :error
-
     event :convert do
       transitions :from => :pending, :to => :converting
     end
@@ -41,9 +39,8 @@ class Video < ActiveRecord::Base
   def convert_command
     flv = File.join(File.dirname(source.path), "#{id}.flv")
     File.open(flv, 'w')
-
     command = <<-end_command
-      ffmpeg -i #{ source.path } -ar 22050 -ab 32
+    ffmpeg -i #{ source.path } -ar 22050 -ab 32
     -s 480x360 -vcodec flv -r 25 -qscale 8 -f flv -y #{ flv }
     end_command
     command.gsub!(/\s+/, " ")

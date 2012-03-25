@@ -1,4 +1,4 @@
-
+<%= javascript_include_tag "jquery.sausage" %>
 <% if @user == current_user %>
 
     <center><br><%= render 'micropost_form' %></center>
@@ -8,10 +8,48 @@
     <% end %>
 <% end %>
 
+<table class="microposts" summary="User microposts">
 <% if !@microposts.empty? %>
-    <table class="microposts" summary="User microposts">
       <%= render @microposts %>
-    </table>
 <% end %>
-<center><%= paginate @microposts %></center>
+</table>
+<p id="loading">Loading more page results...</p>
+
+
+
+
+<script type="text/javascript">
+(function() {
+  var page = 1,
+      loading = false;
+
+  function nearBottomOfPage() {
+    return $(window).scrollTop() > $(document).height() - $(window).height() - 200;
+  }
+
+  $(window).scroll(function(){
+    if (loading) {
+      return;
+    }
+
+    if(nearBottomOfPage()) {
+      loading=true;
+      page++;
+      $.ajax({
+        url: '/wall?current_page=' + page,
+        type: 'get',
+        dataType: 'script',
+        success: function() {
+          loading=false;
+        }
+      });
+    }
+  });
+
+  $(window).sausage();
+}());
+</script>
+
+
+<!-- <center><%= paginate @microposts %></center> -->
 

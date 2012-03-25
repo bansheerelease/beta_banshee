@@ -6,9 +6,16 @@ class MicropostsController < ApplicationController
     @title = 'Microposts'
     @user = User.find(current_user.id)
     feed = @user.feed
-    @microposts = feed.page(params[:current_page]).per(5)
+    @microposts = feed.page(params[:current_page]).per (5)
     @new_post = Micropost.new if @new_post.nil?
-  end
+
+    #changes
+    respond_to do |format|
+      format.js
+      format.html # show.html.erb
+      format.xml  { render :xml => @micropost }
+    end
+end
 
   def show_other_user
     @title = 'Microposts'

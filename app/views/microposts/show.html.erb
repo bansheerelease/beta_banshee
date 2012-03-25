@@ -1,11 +1,75 @@
 <%= javascript_include_tag "jquery.sausage" %>
+
 <% if @user == current_user %>
 
     <center><br><%= render 'micropost_form' %></center>
+  <script type="text/javascript">
+  (function() {
+    var page = 1,
+        loading = false;
+
+    function nearBottomOfPage() {
+      return $(window).scrollTop() > $(document).height() - $(window).height() - 200;
+    }
+
+    $(window).scroll(function(){
+      if (loading) {
+        return;
+      }
+
+      if(nearBottomOfPage()) {
+        loading=true;
+        page++;
+        $.ajax({
+          url: '/wall?current_page=' + page,
+          type: 'get',
+          dataType: 'script',
+          success: function() {
+            loading=false;
+          }
+        });
+      }
+    });
+
+    $(window).sausage();
+  }());
+  </script>
 <% else %>
-    <% if !@user.nil? %>
-      <%= render 'relationships/follow_form' %>
-    <% end %>
+  <script type="text/javascript">
+  (function() {
+    var page = 1,
+        loading = false;
+
+    function nearBottomOfPage() {
+      return $(window).scrollTop() > $(document).height() - $(window).height() - 200;
+    }
+
+    $(window).scroll(function(){
+      if (loading) {
+        return;
+      }
+
+      if(nearBottomOfPage()) {
+        loading=true;
+        page++;
+        var path = '/wall/' + <%= @user.id %> + '?current_page=' + page;
+        $.ajax({
+          url: path,
+          type: 'get',
+          dataType: 'script',
+          success: function() {
+            loading=false;
+          }
+        });
+      }
+    });
+
+    $(window).sausage();
+  }());
+  </script>
+  <% if !@user.nil? %>
+    <%= render 'relationships/follow_form' %>
+  <% end %>
 <% end %>
 
 <table class="microposts" summary="User microposts">
@@ -13,42 +77,10 @@
       <%= render @microposts %>
 <% end %>
 </table>
-<p id="loading">Loading more page results...</p>
 
 
+<!--<p id="loading">Loading more page results...</p>-->
 
-
-<script type="text/javascript">
-(function() {
-  var page = 1,
-      loading = false;
-
-  function nearBottomOfPage() {
-    return $(window).scrollTop() > $(document).height() - $(window).height() - 200;
-  }
-
-  $(window).scroll(function(){
-    if (loading) {
-      return;
-    }
-
-    if(nearBottomOfPage()) {
-      loading=true;
-      page++;
-      $.ajax({
-        url: '/wall?current_page=' + page,
-        type: 'get',
-        dataType: 'script',
-        success: function() {
-          loading=false;
-        }
-      });
-    }
-  });
-
-  $(window).sausage();
-}());
-</script>
 
 
 <!-- <center><%= paginate @microposts %></center> -->

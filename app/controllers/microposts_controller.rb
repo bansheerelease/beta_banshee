@@ -6,7 +6,7 @@ class MicropostsController < ApplicationController
     @title = 'Microposts'
     @user = User.find(current_user.id)
     feed = @user.feed
-    @microposts = feed.page(params[:current_page]).per (5)
+    @microposts = feed.page(params[:current_page]).per(5)
     @new_post = Micropost.new if @new_post.nil?
 
     #changes

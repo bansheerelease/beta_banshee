@@ -1,3 +1,6 @@
+<% if @user == current_user %>
+    <p><%= link_to "New Gallery", new_gallery_path %></p>
+<% end %>
 
 
 <% for gallery in @galleries %>
@@ -6,8 +9,5 @@
 
     Paintings: <%= gallery.paintings.size %>
   </div>
-<% end %>
-<% if @user == current_user %>
-<p><%= link_to "New Gallery", new_gallery_path %></p>
 <% end %>
 

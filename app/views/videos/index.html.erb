@@ -1,0 +1,11 @@
+<% if @user == current_user %>
+    <p><%= link_to "New Video", '/download/videos' %></p>
+<% end %>
+
+
+<% for video in @videos %>
+    <div class="video_all">
+      <h2><%= link_to video.name, video %></h2>
+    </div>
+<% end %>
+

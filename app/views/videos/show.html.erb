@@ -1,0 +1,22 @@
+
+
+<div id = "video_single">
+
+    <script type='text/javascript' src='jwplayer.js'></script>
+
+    <div id='mediaspace'>This text will be replaced</div>
+
+    <script type='text/javascript'>
+      jwplayer('mediaspace').setup({
+        'flashplayer': '/player.swf',
+        'file': '<%= @video.source.url %>',
+        'controlbar': 'over',
+        'duration': '34',
+        'fullscreen': 'true',
+        'stretching': 'fill',
+        'width': '470',
+        'height': '320'
+      });
+    </script>
+    <br><b><center><%= @video.name %></center></b>
+</div>

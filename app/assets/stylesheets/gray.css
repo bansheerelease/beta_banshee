@@ -331,3 +331,18 @@ a img {
 
 }
 
+/*Video*/
+
+#video_single {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 470px;
+
+}
+
+/*Help*/
+#help{
+    margin: 100px 0px 0px 220px;
+}

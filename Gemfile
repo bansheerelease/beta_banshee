@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # common gems
 gem 'activeadmin'
+gem 'aasm'
 gem 'best_in_place'
 gem "carrierwave"
 gem 'devise'

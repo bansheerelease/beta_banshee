@@ -25,7 +25,8 @@ class User < ActiveRecord::Base
 
   has_many :galleries,
            :dependent => :destroy
-
+  has_many :videos,
+           :dependent => :destroy
   has_one :user_info,
           :dependent => :destroy
   has_many :microposts,

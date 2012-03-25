@@ -8,7 +8,9 @@
   <%= link_to "Readers", '/followers' , :class => "button round" %>
   <%= link_to "Friends", '/following' , :class => "button round" %>
   <%= link_to "Photo", '/galleries' , :class => "button round" %>
-  <%= link_to "Fun", '/fun' , :class => "button round" %>
+  <%= link_to "Video", "/" + current_user.id.to_s + '/videos/all' , :class => "button round" %>
+  <% fun = image_tag("th_pacman_by_bad_blood.gif", :alt => "Banshee", :class => "round") %>
+  <%= link_to fun + "Try!",  '/fun' , :class => "button round" %>
   <%= link_to "Settings", edit_user_registration_path, :class => "button round"  %>
   <%= link_to "Sign out", destroy_user_session_path , :class => "button round" %>
 

@@ -1,7 +1,15 @@
-<%= link_to 'PacMan', '/pacman' %><br>
-The great unforgetable game... Do you like classic ?? <br>
-<%= link_to 'Asteroids', '/asteroids' %><br>
+<center><h1> Great Games for FREE! </h1></center>
+
+
+<% pacman_img = image_tag("njam-pacman-logo.png", :alt => "Banshee", :class => "round") %></br>
+<%= link_to pacman_img, '/pacman' %>
+The great unforgetable game...Pacman!!! Don't you like classic ?? <br>
+
+
+<% rocket = image_tag("rocket.png", :alt => "Banshee", :class => "round") %></br>
+<%= link_to rocket, '/asteroids' %>
 Fly on the ship in the space, destroing asteroids and some strange space stations <br>
-<%= link_to 'Angry birds (Chrome only !)', 'http://chrome.angrybirds.com/', :target => '_blank'  %><br>
-<%= link_to 'Canvas rider', 'http://canvasrider.com/tracks/356176', :target => '_blank'  %><br>
-<%= link_to 'Berts Breakdown', 'http://www.paulbrunt.co.uk/bert/', :target => '_blank'  %><br>
+
+<% angrybirds = image_tag("angrybirds-seasons.png", :alt => "Banshee", :class => "round") %></br>
+<%= link_to angrybirds ,  'http://chrome.angrybirds.com/', :target => '_blank'  %>
+Do you think you are angry? Try this game and relax!</br>

@@ -9,13 +9,12 @@
   <%= link_to "Friends", '/following' , :class => "button round" %>
   <%= link_to "Photo", '/galleries' , :class => "button round" %>
   <%= link_to "Fun", '/fun' , :class => "button round" %>
-  <!--<%= link_to "Video", '/video' , :class => "button round" %>-->
   <%= link_to "Settings", edit_user_registration_path, :class => "button round"  %>
   <%= link_to "Sign out", destroy_user_session_path , :class => "button round" %>
 
   <br><%= form_tag '/search' do %>
   <%= text_field_tag :search, params[:search], :size => 9 %>
-  <%= submit_tag 'Search', :name => nil, :email=>nil%></br>
+  <%= submit_tag 'Search' %></br>
   <br><%= check_box_tag :user %> users
   <br><%= check_box_tag :microposts %> microposts
   <br><%= check_box_tag :profiles %> profiles
